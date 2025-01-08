@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Frosty Business </title>
+    <title> Home One || austry || austry HTML 5 Template </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Frosty Business" />
+    <meta name="description" content="austry HTML 5 Template " />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,30 +110,11 @@
                             <h5 class="main-menu__call-number"><a href="tel:922460088">+ 92 (246) 0088</a></h5>
                         </div>
                     </div>
-                    <style>
-                        .imgx{
-                            width:150px !important;
-                        }
-                        @media (max-width: 480px) {
-                            .imgx{
-                                width:100px !important;
-                            }
-                            .stricky-header .main-menu__wrapper-inner-content {
-                                padding-left: 20px; 
-                                padding-right: 20px;
-                            }
-                            .stricky-header {
-                                display: block !important;
-                            }
-                        }
-                    </style>
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__wrapper-inner-content">
                             <div class="main-menu__left">
                                 <div class="main-menu__logo">
-                                    <a href="index.html">
-                                        <img class="imgx"src="images/Logo (1).png" alt="">
-                                    </a>
+                                    <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="main-menu__right">

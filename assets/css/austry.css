@@ -21,9 +21,11 @@
   --austry-font: 'Manrope', sans-serif;
   --austry-white: #ffffff;
   --austry-white-rgb: 255, 255, 255;
-  --austry-base: #fc811b;
+  /* --austry-base: #fc811b; */
+  --austry-base: #DCAE53;
   --austry-base-rgb: 252, 129, 27;
-  --austry-black: #13223c;
+  /* --austry-black: #13223c; */
+  --austry-black: #009F4C;
   --austry-black-rgb: 19, 34, 60;
   --austry-extra: #eff1f5;
   --austry-extra-rgb: 239, 241, 245;
@@ -476,7 +478,7 @@ ul {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: var(--austry-black);
+  background: #D9BD84;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -950,7 +952,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--austry-black);
+  /* background-color: var(--austry-black); */
+  background-color: #fff;
   padding-left: 60px;
   padding-right: 137px;
   margin-right: 227px;
@@ -1019,13 +1022,14 @@ ul {
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: var(--austry-white);
+  color: #DCAE53;
+  /* color: #009f4c; */
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .main-menu__search:hover {
-  color: var(--austry-base);
+  color: #009f4c;
 }
 
 .main-menu__cart-box {
@@ -1039,13 +1043,14 @@ ul {
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: var(--austry-white);
+  /* color: var(--austry-white); */
+  color: #DCAE53;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .main-menu__cart:hover {
-  color: var(--austry-base);
+  color: #009f4c;
 }
 
 .stricky-header .main-menu__btn {
@@ -1118,7 +1123,8 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #959ca9;
+  /* color: #fff; */
+  color: #009f4c;
   font-weight: 500;
   position: relative;
   -webkit-transition: all 500ms ease;
@@ -1129,7 +1135,8 @@ ul {
 .main-menu .main-menu__list>li:hover>a,
 .stricky-header .main-menu__list>li.current>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: var(--austry-white);
+  /* color: var(--austry-white); */
+  color: #000;
 }
 
 .main-menu .main-menu__list>li>a::before,
@@ -1333,7 +1340,8 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 20px;
-  color: var(--austry-white);
+  /* color: var(--austry-white); */
+  color: #DCAE53;
   cursor: pointer;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -6269,7 +6277,7 @@ ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 30px;
-  color: #949ca9;
+  color: #fff;
 }
 
 .footer-widget__about-btn-box {
@@ -6326,7 +6334,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  color: #959ca9;
+  color: #dee2e6;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
@@ -6362,7 +6370,7 @@ ul {
 
 .footer-widget__contact-text {
   font-size: 15px;
-  color: #959ca9;
+  color: #dee2e6;
   line-height: 26px;
   padding-top: 3px;
 }
@@ -6440,7 +6448,7 @@ ul {
   background-color: transparent;
   outline: none;
   font-size: 14px;
-  color: #959ca9;
+  color: #fff;
   font-weight: 500;
   border: 1px solid var(--austry-white);
   padding-right: 70px;
@@ -6562,7 +6570,7 @@ ul {
 
 .site-footer__bottom-text {
   font-size: 14px;
-  color: #959ca9;
+  color: #fff;
 }
 
 .site-footer__bottom-text a {
@@ -6609,7 +6617,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  color: #959ca9;
+  color: #fff;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
