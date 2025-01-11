@@ -12,7 +12,7 @@
                         </a>
                     </div>
                     <div class="footer-widget__about-text-box">
-                        <p class="footer-widget__about-text">Green Air (Frosty) specializes in high-quality refrigeration solutions, offering innovative and energy-efficient products since 2010. With a focus on customer satisfaction, we serve industries like frozen food, dairy, and beverages across India.</p>
+                        <p class="footer-widget__about-text">Green Air (Frosty) delivers innovative refrigeration solutions with quality and efficiency since 2010, serving diverse industries nationwide.</p>
                     </div>
                     <div class="footer-widget__about-btn-box">
                         <a href="contact.php" class="footer-widget__about-btn thm-btn">Contact</a>
