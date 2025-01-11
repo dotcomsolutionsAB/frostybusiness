@@ -9,7 +9,7 @@
     </div>
     <div class="section">
         <h3>Projects (Count: 4)</h3>
-        <a href="../project/project_actions.php"><button>Click Me</button></a>
+        <a href="./project/project_actions.php"><button>Click Me</button></a>
     </div>
     <div class="section">
         <h3>Details (Count: 12)</h3>
