@@ -88,7 +88,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                         <div class="contact-info__single">
                             <h4 class="contact-info__title">About</h4>
-                            <p class="contact-info__text">Green Air (Frosty) delivers innovative refrigeration solutions with quality and efficiency since 2010, serving diverse industries nationwide.</p>
+                            <p class="contact-info__text">Green Air (Frosty) delivers innovative and reliable refrigeration solutions nationwide.</p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
                                     <a href="contact.html">Contact</a>
