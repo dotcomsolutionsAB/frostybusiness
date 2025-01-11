@@ -136,12 +136,9 @@
                                                             </div>
                                                             <h4 class="testimonial-four__client-name">Customized Refrigeration Solutions
                                                             </h4>
-                                                            <p class="testimonial-four__client-sub-title">
-                                                                Marketing
-                                                                head</p>
                                                         </div>
                                                         <div class="testimonial-four__quote">
-                                                            <span class="icon-quote"></span>
+                                                            <span class="icon-quote"><i class="fa fa-thumbs-up"></i></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -167,12 +164,9 @@
                                                             </div>
                                                             <h4 class="testimonial-four__client-name">Energy-Efficient Systems
                                                             </h4>
-                                                            <p class="testimonial-four__client-sub-title">
-                                                                Marketing
-                                                                head</p>
                                                         </div>
                                                         <div class="testimonial-four__quote">
-                                                            <span class="icon-quote"></span>
+                                                            <span class="icon-quote"><i class="fa fa-thumbs-up"></i></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -198,12 +192,9 @@
                                                             </div>
                                                             <h4 class="testimonial-four__client-name">Nationwide Delivery
                                                             </h4>
-                                                            <p class="testimonial-four__client-sub-title">
-                                                                Marketing
-                                                                head</p>
                                                         </div>
                                                         <div class="testimonial-four__quote">
-                                                            <span class="icon-quote"></span>
+                                                            <span class="icon-quote"><i class="fa fa-thumbs-up"></i></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -229,9 +220,6 @@
                                                             </div>
                                                             <h4 class="testimonial-four__client-name">After-Sales Support
                                                             </h4>
-                                                            <p class="testimonial-four__client-sub-title">
-                                                                Marketing
-                                                                head</p>
                                                         </div>
                                                         <div class="testimonial-four__quote">
                                                             <span class="icon"><i class="fa fa-thumbs-up"></i></span>
