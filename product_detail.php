@@ -60,156 +60,10 @@
 
     <div class="page-wrapper">
         <header class="main-header">
-            <div class="main-header__top">
-                <div class="main-header__top-wrapper">
-                    <div class="main-header__top-inner">
-                        <div class="main-header__top-left">
-                            <p class="main-header__top-text">80 Broklyn Golden Street, New York. USA</p>
-                            <div class="main-header__social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-header__top-right">
-                            <ul class="list-unstyled main-header__contact-list">
-                                <li>
-                                    <div class="icon">
-                                        <i class="icon-email"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="needhelp@company.com">needhelp@company.com</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="icon-clock"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="main-menu">
-                <div class="main-menu__wrapper">
-                    <div class="main-menu__btn">
-                        <a href="contact.html">Get a free quote</a>
-                    </div>
-                    <div class="main-menu__call">
-                        <div class="main-menu__call-icon">
-                            <span class="icon-phone-ringing"></span>
-                        </div>
-                        <div class="main-menu__call-content">
-                            <p class="main-menu__call-sub-title">Call Anytime</p>
-                            <h5 class="main-menu__call-number"><a href="tel:922460088">+ 92 (246) 0088</a></h5>
-                        </div>
-                    </div>
-                    <div class="main-menu__wrapper-inner">
-                        <div class="main-menu__wrapper-inner-content">
-                            <div class="main-menu__left">
-                                <div class="main-menu__logo">
-                                    <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="main-menu__right">
-                                <div class="main-menu__main-menu-box">
-                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                    <ul class="main-menu__list">
-                                        <li class="dropdown">
-                                            <a href="index.html">Home </a>
-                                            <ul>
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index2.html">Home Two</a></li>
-                                                <li><a href="index3.html">Home Three</a></li>
-                                                <li><a href="index4.html">Home Four</a></li>
-                                                <li><a href="index5.html">Home Five</a></li>
-                                                <li><a href="index6.html">Home Six</a></li>
-                                                <li class="dropdown">
-                                                    <a href="#">Header Styles</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Header One</a></li>
-                                                        <li><a href="index2.html">Header Two</a></li>
-                                                        <li><a href="index3.html">Header Three</a></li>
-                                                        <li><a href="index4.html">Home Four</a></li>
-                                                        <li><a href="index5.html">Home Five</a></li>
-                                                        <li><a href="index6.html">Home Six</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="our-clients.html">Our Clients</a></li>
-                                                <li><a href="faq.html">FAQs</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Services</a>
-                                            <ul>
-                                                <li><a href="services-1.html">Services 01</a></li>
-                                                <li><a href="services-2.html">Services 02</a></li>
-                                                <li><a href="services-3.html">Services 03</a></li>
-                                                <li><a href="services-4.html">Services 04</a></li>
-                                                <li><a href="services-5.html">Services 05</a></li>
-                                                <li><a href="services-6.html">Services 06</a></li>
-                                                <li><a href="mechanical-expert.html">Mechanical Expert</a></li>
-                                                <li><a href="repair-welding.html">Repair & Welding</a></li>
-                                                <li><a href="appartment-design.html">Appartment Design</a></li>
-                                                <li><a href="design-build.html">Design & Build</a></li>
-                                                <li><a href="house-renovation.html">House Renovation</a></li>
-                                                <li><a href="building-material.html">Building Material</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Projects</a>
-                                            <ul>
-                                                <li><a href="projects-1.html">Projects 01</a></li>
-                                                <li><a href="projects-2.html">Projects 02</a></li>
-                                                <li><a href="projects-3.html">Projects 03</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">News</a>
-                                            <ul>
-                                                <li><a href="news.html">News</a></li>
-                                                <li><a href="news-details.html">News Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="main-menu__search-cart-box">
-                                    <div class="main-menu__search-box">
-                                        <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                    </div>
-                                    <div class="main-menu__cart-box">
-                                        <a href="#" class="main-menu__cart icon-shopping-cart"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            <?php include("inc_files/top_header.php"); ?>
+            <?php include("inc_files/navbar.php"); ?>
         </header>
-
-        <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
+        <?php include("inc_files/sticky_header.php"); ?>
 
 
         <!--Page Header Start-->
@@ -222,7 +76,7 @@
                     <h2>Project Details</h2>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Home</a></li>
                             <li><span>/</span></li>
                             <li>Project</li>
                         </ul>
@@ -365,100 +219,7 @@
 
         <!--Site Footer Start-->
         <footer class="site-footer">
-            <div class="site-footer__img">
-                <img src="assets/images/resources/site-footer-img-1.jpg" alt="">
-            </div>
-            <div class="container">
-                <div class="site-footer__top">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
-                                </div>
-                                <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">There are many of simple lorem available for
-                                        not, but the majority alteration.</p>
-                                </div>
-                                <div class="footer-widget__about-btn-box">
-                                    <a href="contact.html" class="footer-widget__about-btn thm-btn">Contact</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="footer-widget__column footer-widget__links">
-                                <div class="footer-widget__title-box">
-                                    <h4 class="footer-widget__title">Links</h4>
-                                </div>
-                                <ul class="footer-widget__links-list list-unstyled">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="team.html">Meet Our Team</a></li>
-                                    <li><a href="news.html">News & Media</a></li>
-                                    <li><a href="projects-1.html">Our Projects</a></li>
-                                    <li><a href="contact.html">Contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="footer-widget__contact">
-                                <div class="footer-widget__title-box">
-                                    <h4 class="footer-widget__title">Contact</h4>
-                                </div>
-                                <p class="footer-widget__contact-text">30 Road Broklyn Street, 600 <br> New York, USA
-                                </p>
-                                <ul class="footer-widget__Contact-list list-unstyled">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-email"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="needhelp@company.com">needhelp@company.com</a></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-telephone"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="tel:9288008960">+92 ( 8800 ) - 8960</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="footer-widget__newsletter">
-                                <div class="footer-widget__title-box">
-                                    <h4 class="footer-widget__title">Newsletter</h4>
-                                </div>
-                                <div class="footer-widget__newsletter-form-box">
-                                    <form class="footer-widget__newsletter-form mc-form" data-url="MC_FORM_URL">
-                                        <div class="footer-widget__newsletter-form-input-box">
-                                            <input type="email" placeholder="Email Address" name="EMAIL">
-                                            <button type="submit" class="footer-widget__newsletter-btn"><img
-                                                    src="assets/images/icon/paper-plan-icon.png" alt=""></button>
-                                        </div>
-                                    </form>
-                                    <div class="mc-form__response"></div>
-                                </div>
-                                <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="site-footer__bottom">
-                    <p class="site-footer__bottom-text">© Copyright 2023 by <a href="#">Austry.com</a></p>
-                    <ul class="list-unstyled site-footer__bottom-menu">
-                        <li><a href="about.html">Help</a></li>
-                        <li><a href="about.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+            <?php include("inc_files/footer.php"); ?>            
         </footer>
         <!--Site Footer End-->
 
@@ -466,59 +227,25 @@
     </div><!-- /.page-wrapper -->
 
 
+    <style>
+        .mobile-nav__content .logo-box {
+            margin-bottom: 40px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            background: #fff;
+            justify-content: center;
+            width: fit-content;
+            padding: 5px;
+        }
+    </style>
     <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="130"
-                        alt="" /></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@austry.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__top">
-                <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
+        <?php include("inc_files/mobile_wrap.php"); ?>
     </div>
     <!-- /.mobile-nav__wrapper -->
 
     <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
+        <?php include("inc_files/searchbar_content.php"); ?>        
     </div>
     <!-- /.search-popup -->
 
