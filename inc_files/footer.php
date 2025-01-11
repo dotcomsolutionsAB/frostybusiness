@@ -108,9 +108,9 @@
     </div>
     <div class="site-footer__bottom">
         <p class="site-footer__bottom-text">© Copyright 2025 by <a href="#">Dotcom Solutions</a></p>
-        <ul class="list-unstyled site-footer__bottom-menu">
+        <!-- <ul class="list-unstyled site-footer__bottom-menu">
             <li><a href="about.html">Help</a></li>
             <li><a href="about.html">Privacy Policy</a></li>
-        </ul>
+        </ul> -->
     </div>
 </div>

@@ -3,7 +3,7 @@
         <div class="main-header__top-inner">
             <div class="main-header__top-left">
                 <p class="main-header__top-text">
-                    <i class="icon-location" style="color:#dcae53;"></i>
+                    <i class="icon-location" style="color:#dcae53;"></i> 
                     Boral Main Road, Narendrapur, Kolkata-700 103</p>
                 <!-- <div class="main-header__social">
                     <a href="#"><i class="fab fa-twitter"></i></a>
