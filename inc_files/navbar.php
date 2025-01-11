@@ -54,7 +54,7 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li class="dropdown">
-                                <a href="product.php">Projects</a>
+                                <a href="product.php">Products</a>
                             </li>                            
                             <li>
                                 <a href="contact.php">Contact</a>

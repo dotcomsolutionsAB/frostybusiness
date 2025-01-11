@@ -27,24 +27,22 @@
             <div class="about-one__right">
                 <div class="section-title text-left">
                     <span class="section-title__tagline">About Company</span>
-                    <h2 class="section-title__title">World largest & trusted
-                        construction co.</h2>
+                    <h2 class="section-title__title">Specializes in Manufacturing High-Quality Refrigeration Equipment</h2>
                 </div>
-                <p class="about-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                    tellus, aute irure ullamcorper mattis, pulvinar dapibus leo. Duis dolor in voluptate
-                    dolore reprehenderit in velit esse nulla pariatur.</p>
+                <p class="about-one__text">Green Air (Frosty), established in 2010, specializes in manufacturing high-quality refrigeration equipment,
+      including deep freezers, water coolers, hotel appliances, and ice cream equipment. Our mission is to provide
+      exceptional services and satisfaction to customers at affordable costs.</p>
                 <ul class="about-one__points-box list-unstyled">
                     <li>
                         <div class="about-one__points-title">
-                            <p>Worldwide Manufacture</p>
+                            <p>Nationwide Network</p>
                         </div>
                         <div class="about-one__points-content">
                             <div class="about-one__points-icon">
                                 <span class="icon-planet-earth"></span>
                             </div>
                             <div class="about-one__points-text">
-                                <p>Duis dolor in simply free text available voluptate dolore reprehenderit
-                                    in velit esse.</p>
+                                <p>A strong network across India to serve customers and grow businesses together.</p>
                             </div>
                         </div>
                     </li>
@@ -57,8 +55,7 @@
                                 <span class="icon-quality"></span>
                             </div>
                             <div class="about-one__points-text">
-                                <p>Duis dolor in simply free text available voluptate dolore reprehenderit
-                                    in velit esse.</p>
+                                <p>Top-Quality Materials Use of premium raw materials to ensure long-lasting and efficient products. </p>
                             </div>
                         </div>
                     </li>
