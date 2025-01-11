@@ -62,12 +62,12 @@
                         </ul>
                     </div>
                     <div class="main-menu__search-cart-box">
-                        <div class="main-menu__search-box">
+                        <!-- <div class="main-menu__search-box">
                             <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                         </div>
                         <div class="main-menu__cart-box">
                             <a href="#" class="main-menu__cart icon-shopping-cart"></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
