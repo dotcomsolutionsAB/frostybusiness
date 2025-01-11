@@ -20,7 +20,7 @@
                 </div>
                 <div class="counter-one__content-box">
                     <div class="counter-one__count-box count-box">
-                        <h3 class="count-text" data-stop="252" data-speed="1500">00</h3>
+                        <h3 class="count-text" data-stop="176" data-speed="1500">00</h3>
                         <span class="counter-one__plus">+</span>
                     </div>
                     <p class="counter-one__text">Successful Projects</p>

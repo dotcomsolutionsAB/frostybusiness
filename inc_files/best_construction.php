@@ -12,8 +12,8 @@
                 <h3 class="best-construction__title">committed to providing innovative, reliable, and cost-effective cooling solutions.</h3>
                 <p class="best-construction__text">At Green Air (Frosty), we focus on providing the best cooling solutions for various industries, including frozen
                 food, dairy, and beverages. We are proud to be a trusted name in controlled refrigeration solutions across India.</p>
-                <div class="best-construction__progress">
-                    <!-- <div class="best-construction__progress-single">
+                <!-- <div class="best-construction__progress">
+                    <div class="best-construction__progress-single">
                         <h4 class="best-construction__progress-title">Construction</h4>
                         <div class="bar">
                             <div class="bar-inner count-bar" data-percent="78%">
@@ -28,8 +28,8 @@
                                 <div class="count-text">36%</div>
                             </div>
                         </div>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
             </div>
         </div>
         <div class="col-xl-6 col-lg-6">

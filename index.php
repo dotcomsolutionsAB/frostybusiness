@@ -91,7 +91,7 @@
 
         <!--Project One Start-->
         <section class="project-one">
-            <!-- <?php include("inc_files/project_section.php"); ?> -->
+            <?php include("inc_files/project_section.php"); ?>
         </section>
         <!--Project One End-->
 
