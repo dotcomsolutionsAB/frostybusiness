@@ -127,13 +127,13 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="about-seven__progress">
+                                <!-- <div class="about-seven__progress">
                                     <div class="about-seven__progress-wrap">
                                         <div class="about-seven__progress-single">
                                             <div class="about-seven__progress-box">
                                                 <div class="circle-progress"
                                                     data-options='{ "value": 0.9,"thickness": 3,"emptyFill": "#eff1f5","lineCap": "square", "size": 118, "fill": { "color": "#fc811b" } }'>
-                                                </div><!-- /.circle-progress -->
+                                                </div>
                                                 <span>90%</span>
                                             </div>
                                             <div class="about-seven__progress-content">
@@ -141,7 +141,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="about-seven__btn-box">
                                 <a href="about.html" class="thm-btn about-seven__btn">discover More</a>
