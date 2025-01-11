@@ -172,6 +172,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="faq-one__left">
                             <div class="section-title text-left">
+                                <!-- <br> -->
                                 <span class="section-title__tagline">Frequently Asked Questions</span>
                                 <h2 class="section-title__title">Things you would like to know about</h2>
                             </div>
@@ -180,28 +181,16 @@
                                     <span class="icon-right-arrow"></span>
                                 </div>
                                 <div class="faq-one__icon-text">
-                                    <p>Donec quis felis commodo orem ipsum is simply free text dolor sit amet.</p>
+                                    <p>What products does Green Air (Frosty) manufacture?</p>
                                 </div>
                             </div>
-                            <p class="faq-one__text">Sed rhoncus facilisis purus, at accumsan purus sagittis vitae.
-                                Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque
-                                amet sapien semper tempus.</p>
+                            <p class="faq-one__text">We specialize in refrigeration equipment such as deep freezers, water coolers, chillers, candy plants, and processing plants for ice cream, juice, and milk.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="faq-one__right">
-                            <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                            <div class="accrodion-grp" data-grp-name="faq-one-accrodion">                                
                                 <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4>What products does Green Air (Frosty) manufacture?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>We specialize in refrigeration equipment such as deep freezers, water coolers, chillers, candy plants, and processing plants for ice cream, juice, and milk.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
                                     <div class="accrodion-title">
                                         <h4>Do you offer customized refrigeration solutions?</h4>
                                     </div>
