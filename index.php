@@ -91,7 +91,7 @@
 
         <!--Project One Start-->
         <section class="project-one">
-            <?php include("inc_files/project_section.php"); ?>
+
         </section>
         <!--Project One End-->
 
@@ -109,7 +109,7 @@
 
         <!--Team One Start-->
         <section class="team-one">
-            <!-- <?php include("inc_files/teams.php"); ?>  -->
+
         </section>
         <!--Team One End-->
 
