@@ -11,10 +11,10 @@
                 </div>
             </a>
         </div>
-        <h3 class="trusted-one__title count-box">Trusted By Additional Than <span class="count-text"
-                data-stop="450000" data-speed="1500">00</span> <br>Upbeat Individuals</h3>
+        <h3 class="trusted-one__title count-box">Satisfied customers trust Green Air (Frosty) <span class="count-text"
+                data-stop="1000+" data-speed="1500">00</span> <br>for their refrigeration and cooling needs.</h3>
         <div class="trusted-one__btn-box">
-            <a href="about.html" class="trusted-one__btn thm-btn">Discover more</a>
+            <a href="about.php" class="trusted-one__btn thm-btn">Discover more</a>
         </div>
     </div>
 </div>
