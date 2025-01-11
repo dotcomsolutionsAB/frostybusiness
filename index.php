@@ -90,9 +90,9 @@
         <!--Services One End-->
 
         <!--Project One Start-->
-        <section class="project-one">
+        <!-- <section class="project-one">
 
-        </section>
+        </section> -->
         <!--Project One End-->
 
         <!--Trusted One Start-->
@@ -108,9 +108,9 @@
         <!--Best Construction End-->
 
         <!--Team One Start-->
-        <section class="team-one">
+        <!-- <section class="team-one">
 
-        </section>
+        </section> -->
         <!--Team One End-->
 
         <!--Brand One Start-->
