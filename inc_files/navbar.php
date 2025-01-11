@@ -54,31 +54,6 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#">Pages</a>
-                                <ul>
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="our-clients.html">Our Clients</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Services</a>
-                                <ul>
-                                    <li><a href="services-1.html">Services 01</a></li>
-                                    <li><a href="services-2.html">Services 02</a></li>
-                                    <li><a href="services-3.html">Services 03</a></li>
-                                    <li><a href="services-4.html">Services 04</a></li>
-                                    <li><a href="services-5.html">Services 05</a></li>
-                                    <li><a href="services-6.html">Services 06</a></li>
-                                    <li><a href="mechanical-expert.html">Mechanical Expert</a></li>
-                                    <li><a href="repair-welding.html">Repair & Welding</a></li>
-                                    <li><a href="appartment-design.html">Appartment Design</a></li>
-                                    <li><a href="design-build.html">Design & Build</a></li>
-                                    <li><a href="house-renovation.html">House Renovation</a></li>
-                                    <li><a href="building-material.html">Building Material</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
                                 <a href="product.php">Projects</a>
                             </li>                            
                             <li>
