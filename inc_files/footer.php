@@ -16,7 +16,7 @@
                             not, but the majority alteration.</p>
                     </div>
                     <div class="footer-widget__about-btn-box">
-                        <a href="contact.html" class="footer-widget__about-btn thm-btn">Contact</a>
+                        <a href="contact.php" class="footer-widget__about-btn thm-btn">Contact</a>
                     </div>
                 </div>
             </div>
@@ -96,12 +96,12 @@
                             justify-content: flex-start;
                         }
                     </style>
-                    <div class="site-footer__social">
+                    <!-- <div class="site-footer__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
