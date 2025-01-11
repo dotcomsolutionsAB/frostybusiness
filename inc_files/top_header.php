@@ -21,12 +21,12 @@
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <!-- <div class="icon">
                             <i class="icon-clock"></i>
                         </div>
                         <div class="text">
                             <p></p>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
             </div>
