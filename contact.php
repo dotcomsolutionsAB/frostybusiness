@@ -91,7 +91,7 @@
                             <p class="contact-info__text">Green Air (Frosty) delivers innovative and reliable refrigeration solutions nationwide.</p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.php">Contact</a>
                                 </div>
                             </div>
                             <div class="contact-info__icon">
@@ -104,12 +104,12 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
                         <div class="contact-info__single">
                             <h4 class="contact-info__title">Contact</h4>
-                            <p class="contact-info__text">Mon-Sat 8:00 - 6:30 Sunday Closed <br> <a
-                                    href="mailto:greenairkol@gmail.com">greenairkol@gmail.com</a> <br> <a
+                            <!-- <p class="contact-info__text">Mon-Sat 8:00 - 6:30 Sunday Closed <br>  -->
+                            <a href="mailto:greenairkol@gmail.com">greenairkol@gmail.com</a> <br> <a
                                     href="tel:+917439298028">+ 91 74392 98028</a></p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.php">Contact</a>
                                 </div>
                             </div>
                             <div class="contact-info__icon">
@@ -125,7 +125,7 @@
                             <p class="contact-info__text">Boral Main Road, Narendrapur <br> Kolkata - 700 103</p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.php">Contact</a>
                                 </div>
                             </div>
                             <div class="contact-info__icon">

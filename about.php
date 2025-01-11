@@ -100,33 +100,30 @@
                     <div class="col-xl-6">
                         <div class="about-seven__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">Get to Know Austry</span>
-                                <h2 class="section-title__title">The best industry &
-                                    factory business</h2>
+                                <span class="section-title__tagline">Get to Know Frosty</span>
+                                <h2 class="section-title__title">Specializes in Manufacturing</h2>
                             </div>
-                            <p class="about-seven__text-1">committed to providing our customers with exceptional
-                                service.</p>
-                            <p class="about-seven__text-2">Lorem Ipsum is simply dummy text of free available in market
-                                the printing and typesetting industry has been the industry's standard dummy text ever.
+                            <p class="about-seven__text-1">committed to providing innovative, reliable, and cost-effective cooling solutions.</p>
+                            <p class="about-seven__text-2">Green Air (Frosty), established in 2010, specializes in manufacturing high-quality refrigeration equipment, including deep freezers, water coolers, hotel appliances, and ice cream equipment. Our mission is to provide exceptional services and satisfaction to customers at affordable costs..
                             </p>
                             <div class="about-seven__points-box">
                                 <ul class="list-unstyled about-seven__points">
                                     <li>
                                         <div class="icon"><span class="fa fa-check"></span></div>
                                         <div class="text">
-                                            <p>Suspe ndisse leo</p>
+                                            <p>Customized Refrigeration Solutions</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="icon"><span class="fa fa-check"></span></div>
                                         <div class="text">
-                                            <p>Nescterur cing elit</p>
+                                            <p>Deep Freezers & Cooling Equipment</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="icon"><span class="fa fa-check"></span></div>
                                         <div class="text">
-                                            <p>Entum posuere sit not</p>
+                                            <p>Industrial Chillers & Processing Plants</p>
                                         </div>
                                     </li>
                                 </ul>
