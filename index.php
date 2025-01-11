@@ -90,9 +90,9 @@
         <!--Services One End-->
 
         <!--Project One Start-->
-        <section class="project-one">
+        <!-- <section class="project-one">
             <?php include("inc_files/project_section.php"); ?>
-        </section>
+        </section> -->
         <!--Project One End-->
 
         <!--Trusted One Start-->
