@@ -48,29 +48,10 @@
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                         <ul class="main-menu__list">
                             <li class="dropdown">
-                                <a href="index.html">Home </a>
-                                <ul>
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index2.html">Home Two</a></li>
-                                    <li><a href="index3.html">Home Three</a></li>
-                                    <li><a href="index4.html">Home Four</a></li>
-                                    <li><a href="index5.html">Home Five</a></li>
-                                    <li><a href="index6.html">Home Six</a></li>
-                                    <li class="dropdown">
-                                        <a href="#">Header Styles</a>
-                                        <ul>
-                                            <li><a href="index.html">Header One</a></li>
-                                            <li><a href="index2.html">Header Two</a></li>
-                                            <li><a href="index3.html">Header Three</a></li>
-                                            <li><a href="index4.html">Home Four</a></li>
-                                            <li><a href="index5.html">Home Five</a></li>
-                                            <li><a href="index6.html">Home Six</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <a href="index.php">Home </a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.php">About</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#">Pages</a>
@@ -98,23 +79,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#">Projects</a>
-                                <ul>
-                                    <li><a href="projects-1.html">Projects 01</a></li>
-                                    <li><a href="projects-2.html">Projects 02</a></li>
-                                    <li><a href="projects-3.html">Projects 03</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">News</a>
-                                <ul>
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="news-details.html">News Details</a></li>
-                                </ul>
-                            </li>
+                                <a href="product.php">Projects</a>
+                            </li>                            
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>

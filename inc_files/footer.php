@@ -26,11 +26,9 @@
                         <h4 class="footer-widget__title">Links</h4>
                     </div>
                     <ul class="footer-widget__links-list list-unstyled">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="team.html">Meet Our Team</a></li>
-                        <li><a href="news.html">News & Media</a></li>
-                        <li><a href="projects-1.html">Our Projects</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="product.php">Our Products</a></li>
+                        <li><a href="contact.php">Contacts</a></li>
                     </ul>
                 </div>
             </div>
