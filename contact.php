@@ -88,8 +88,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                         <div class="contact-info__single">
                             <h4 class="contact-info__title">About</h4>
-                            <p class="contact-info__text">Lorem ipsum is simply free text not <br> used by copytyping
-                                refreshing. <br> Neque porro est qui</p>
+                            <p class="contact-info__text">Green Air (Frosty) specializes in high-quality refrigeration solutions, offering innovative and energy-efficient products since 2010. With a focus on customer satisfaction, we serve industries like frozen food, dairy, and beverages across India.</p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
                                     <a href="contact.html">Contact</a>
@@ -106,8 +105,8 @@
                         <div class="contact-info__single">
                             <h4 class="contact-info__title">Contact</h4>
                             <p class="contact-info__text">Mon-Sat 8:00 - 6:30 Sunday Closed <br> <a
-                                    href="mailto:needhelp@company.com">needhelp@company.com</a> <br> <a
-                                    href="tel:922460088">+ 92 (246) 0088</a></p>
+                                    href="mailto:greenairkol@gmail.com">greenairkol@gmail.com</a> <br> <a
+                                    href="tel:+917439298028">+ 91 74392 98028</a></p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
                                     <a href="contact.html">Contact</a>
@@ -123,8 +122,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                         <div class="contact-info__single">
                             <h4 class="contact-info__title">Address</h4>
-                            <p class="contact-info__text">80 Broklyn Golden Seven Street, <br> New York. United States
-                                of <br> America </p>
+                            <p class="contact-info__text">Boral Main Road, Narendrapur <br> Kolkata - 700 103</p>
                             <div class="contact-info__btn-box">
                                 <div class="contact-info__btn">
                                     <a href="contact.html">Contact</a>
