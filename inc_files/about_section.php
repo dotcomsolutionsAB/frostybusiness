@@ -27,7 +27,7 @@
             <div class="about-one__right">
                 <div class="section-title text-left">
                     <span class="section-title__tagline">About Company</span>
-                    <h2 class="section-title__title">Specializes in Manufacturing High-Quality Refrigeration Equipment</h2>
+                    <h2 class="section-title__title">Specializes in Manufacturing</h2>
                 </div>
                 <p class="about-one__text">Green Air (Frosty), established in 2010, specializes in manufacturing high-quality refrigeration equipment,
       including deep freezers, water coolers, hotel appliances, and ice cream equipment. Our mission is to provide
