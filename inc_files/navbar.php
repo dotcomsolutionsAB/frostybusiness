@@ -38,7 +38,7 @@
             <div class="main-menu__wrapper-inner-content">
                 <div class="main-menu__left">
                     <div class="main-menu__logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img class="imgx"src="images/Logo (1).png" alt="">
                         </a>
                     </div>
