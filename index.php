@@ -114,15 +114,15 @@
         <!--Team One End-->
 
         <!--Brand One Start-->
-        <section class="brand-one">
-            <?php include("inc_files/brand_slider.php"); ?>            
-        </section>
+        <!-- <section class="brand-one">
+                 
+        </section> -->
         <!--Brand One End-->
 
         <!--Testimonial One Start-->
-        <section class="testimonial-one">
-            <?php include("inc_files/testimonial_section.php"); ?>             
-        </section>
+        <!-- <section class="testimonial-one">
+                        
+        </section> -->
         <!--Testimonial One End-->
 
         <!--News One Start-->
