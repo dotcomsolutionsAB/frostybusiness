@@ -39,7 +39,7 @@
                         <img src="assets/images/resources/best-construction-img-1.jpg" alt="">
                     </div>
                     <div class="best-construction__name">
-                        <p>Austry Construction</p>
+                        <p>Green Air - Frosty</p>
                     </div>
                 </div>
             </div>
