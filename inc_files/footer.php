@@ -8,7 +8,7 @@
                 <div class="footer-widget__column footer-widget__about">
                     <div class="footer-widget__logo">
                         <a href="index.php">
-                            <img src="images/logo2.jpg" alt="logo" style="width:136px; height:50px;">
+                            <img src="images/logo2.png" alt="logo" style="width:136px; height:50px;">
                         </a>
                     </div>
                     <div class="footer-widget__about-text-box">
