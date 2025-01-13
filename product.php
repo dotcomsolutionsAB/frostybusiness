@@ -90,12 +90,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-1.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">01. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>
@@ -107,12 +107,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-2.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">02. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>
@@ -124,12 +124,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-3.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">03. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>
@@ -141,12 +141,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-4.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">04. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>
@@ -158,12 +158,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-5.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">05. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>
@@ -175,12 +175,12 @@
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-6.jpg" alt="">
                                 <div class="project-two__arrow">
-                                    <a href="project-details.html"><span class="icon-right-arrow"></span></a>
+                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
                                 </div>
                             </div>
                             <div class="project-two__content">
                                 <p class="project-two__sub-title">06. Project</p>
-                                <h3 class="project-two__title"><a href="project-details.html">Leading Transition</a>
+                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
                                 </h3>
                             </div>
                         </div>

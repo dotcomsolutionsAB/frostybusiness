@@ -172,7 +172,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="faq-one__left">
                             <div class="section-title text-left">
-                                <!-- <br> -->
+                                <br>
                                 <span class="section-title__tagline">Frequently Asked Questions</span>
                                 <h2 class="section-title__title">Things you would like to know about</h2>
                             </div>
