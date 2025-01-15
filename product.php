@@ -1,3 +1,4 @@
+<?php  include("connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,23 +85,45 @@
         <section class="project-page-two">
             <div class="container">
                 <div class="row">
+
                     <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="assets/images/project/project-2-1.jpg" alt="">
-                                <div class="project-two__arrow">
-                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
+                    <?php
+                        $sql = "SELECT p.name AS product_name, c.name AS category_name, p.model, p.details, p.features, p.image_id 
+                                FROM products p
+                                LEFT JOIN categories c ON p.category_id = c.id";
+                        $stmt = $pdo->prepare($sql);
+                        $stmt->execute();
+                        $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                        if (empty($products)) {
+                            echo "<p>No products available.</p>";
+                        } else {
+                            foreach ($products as $product) {
+                                // $imagePath = $product['image_id'] ? "assets/images/products/{$product['image_id']}.jpg" : "assets/images/default.jpg";
+                                ?>
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="project-two__single">
+                                        <div class="project-two__img">
+                                            <img src="assets/images/project/project-2-2.jpg" alt="Product Image">
+                                            <div class="project-two__arrow">
+                                                <a href="product_detail.php?model=<?php echo urlencode($product['model']); ?>"><span class="icon-right-arrow"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="project-two__content">
+                                            <p class="project-two__sub-title"><b><?php echo htmlspecialchars($product['category_name']); ?></b></p>
+                                            <h3 class="project-two__title">
+                                                <a href="product_detail.php?model=<?php echo urlencode($product['model']); ?>"><?php echo htmlspecialchars($product['product_name']); ?></a>
+                                            </h3>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-two__content">
-                                <p class="project-two__sub-title">01. Project</p>
-                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
+                                <?php
+                            }
+                        }
+                    ?>
+
                     <!--Project Two Single End-->
+
                     <!--Project Two Single Start-->
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="project-two__single">
@@ -118,6 +141,7 @@
                         </div>
                     </div>
                     <!--Project Two Single End-->
+
                     <!--Project Two Single Start-->
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="project-two__single">
