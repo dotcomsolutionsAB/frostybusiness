@@ -88,9 +88,10 @@
 
                     <!--Project Two Single Start-->
                     <?php
-                        $sql = "SELECT p.name AS product_name, c.name AS category_name, p.model, p.details, p.features, p.image_id 
+                        $sql = "SELECT p.id, p.name AS product_name, p.model, c.name AS category_name, u.file_original_name, u.path 
                                 FROM products p
-                                LEFT JOIN categories c ON p.category_id = c.id";
+                                LEFT JOIN categories c ON p.category_id = c.id
+                                LEFT JOIN uploads u ON p.image_id = u.id";
                         $stmt = $pdo->prepare($sql);
                         $stmt->execute();
                         $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -104,7 +105,7 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="project-two__single">
                                         <div class="project-two__img">
-                                            <img src="assets/images/project/project-2-2.jpg" alt="Product Image">
+                                            <img src="images/images/<?php echo htmlspecialchars($product['file_original_name']); ?>" alt="Product Image">
                                             <div class="project-two__arrow">
                                                 <a href="product_detail.php?model=<?php echo urlencode($product['model']); ?>"><span class="icon-right-arrow"></span></a>
                                             </div>
