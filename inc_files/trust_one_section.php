@@ -1,5 +1,5 @@
 <div class="trusted-one__bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-    style="background-image: url(assets/images/backgrounds/trusted-one-bg.jpg);">
+    style="background-image: url(images/trust.jpg);">
 </div>
 <div class="container">
     <div class="trusted-one__inner">
