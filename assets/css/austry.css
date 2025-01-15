@@ -7326,6 +7326,7 @@ ul {
   display: block;
   overflow: hidden;
   z-index: 1;
+  height: 350px;
 }
 
 .project-two__img:before {
@@ -7365,7 +7366,9 @@ ul {
   width: 100%;
   -webkit-transform: scale(1);
   transform: scale(1);
-  transition: all 500ms ease
+  transition: all 500ms ease;
+  object-fit: contain;
+  height: 100%;
 }
 
 .project-two__single:hover .project-two__img img {
