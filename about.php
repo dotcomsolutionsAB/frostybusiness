@@ -89,10 +89,10 @@
                         <div class="about-seven__left">
                             <div class="about-seven__img-box">
                                 <div class="about-seven__img">
-                                    <img src="assets/images/resources/about-seven-img-1.jpg" alt="">
+                                    <img src="images/ab1.jpg" alt="">
                                 </div>
                                 <div class="about-seven__img-2">
-                                    <img src="assets/images/resources/about-seven-img-2.jpg" alt="">
+                                    <img src="images/ab2.jpg" alt="">
                                 </div>
                             </div>
                         </div>
