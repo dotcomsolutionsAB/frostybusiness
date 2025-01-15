@@ -11,8 +11,8 @@
                 </div>
             </a>
         </div>
-        <h3 class="trusted-one__title count-box">Satisfied customers <span class="count-text"
-                data-stop="1000" data-speed="1500">00</span> <br></h3>
+        <h3 class="trusted-one__title count-box">1000+ Satisfied customers 
+            <!-- <span class="count-text" data-stop="1000" data-speed="1500">00</span> <br></h3> -->
         <div class="trusted-one__btn-box">
             <a href="about.php" class="trusted-one__btn thm-btn">Discover more</a>
         </div>

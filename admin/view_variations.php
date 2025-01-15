@@ -47,7 +47,7 @@ if (empty($variations)) {
                 <tr>
                     <td><?php echo htmlspecialchars($variation['id']); ?></td>
                     <td><?php echo htmlspecialchars($variation['name']); ?></td>
-                    <td><?php echo htmlspecialchars($variation['model']); ?></td>
+                    <td><?php echo htmlspecialchars($variation['model_id']); ?></td>
                     <td><?php echo htmlspecialchars($variation['detail_data']); ?></td>
                     <td><?php echo htmlspecialchars($variation['features_data']); ?></td>
                 </tr>
