@@ -36,7 +36,7 @@
             <div class="best-construction__right">
                 <div class="best-construction__img-box">
                     <div class="best-construction__img">
-                        <img src="assets/images/resources/best-construction-img-1.jpg" alt="">
+                        <img src="images/c1.jpg" alt="">
                     </div>
                     <div class="best-construction__name">
                         <p>Green Air - Frosty</p>
