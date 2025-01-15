@@ -126,9 +126,9 @@
         <!--Testimonial One End-->
 
         <!--News One Start-->
-        <section class="news-one">
-            <?php include("inc_files/news_one.php"); ?>            
-        </section>
+        <!-- <section class="news-one">
+                       
+        </section> -->
         <!--News One End-->
 
         <!--Site Footer Start-->
