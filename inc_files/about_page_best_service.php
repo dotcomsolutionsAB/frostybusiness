@@ -71,7 +71,7 @@
 </section>
 <section class="testimonial-four">
     <div class="testimonial-four__big-img">
-        <img src="assets/images/resources/testimonial-four-big-img.png" alt="">
+        <img src="images/who.jpg" alt="">
         <div class="testimonial-four__experience">
             <h3 class="testimonial-four__experience-year">10</h3>
             <p class="testimonial-four__experience-text">Years of <br> experience</p>
