@@ -122,11 +122,10 @@
                             }
                         }
                     ?>
-
                     <!--Project Two Single End-->
 
                     <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
+                    <!-- <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="project-two__single">
                             <div class="project-two__img">
                                 <img src="assets/images/project/project-2-2.jpg" alt="">
@@ -140,77 +139,9 @@
                                 </h3>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--Project Two Single End-->
 
-                    <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="assets/images/project/project-2-3.jpg" alt="">
-                                <div class="project-two__arrow">
-                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                            <div class="project-two__content">
-                                <p class="project-two__sub-title">03. Project</p>
-                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project Two Single End-->
-                    <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="assets/images/project/project-2-4.jpg" alt="">
-                                <div class="project-two__arrow">
-                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                            <div class="project-two__content">
-                                <p class="project-two__sub-title">04. Project</p>
-                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project Two Single End-->
-                    <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="assets/images/project/project-2-5.jpg" alt="">
-                                <div class="project-two__arrow">
-                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                            <div class="project-two__content">
-                                <p class="project-two__sub-title">05. Project</p>
-                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project Two Single End-->
-                    <!--Project Two Single Start-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="assets/images/project/project-2-6.jpg" alt="">
-                                <div class="project-two__arrow">
-                                    <a href="product_detail.php"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                            <div class="project-two__content">
-                                <p class="project-two__sub-title">06. Project</p>
-                                <h3 class="project-two__title"><a href="product_detail.php">Leading Transition</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Project Two Single End-->
                 </div>
             </div>
         </section>
