@@ -38,93 +38,77 @@
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="assets/images/services/services-1-1.jpg" alt="">
+                        <img src="images/service1.jpg" alt="">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
                         <span class="icon-engineering"></span>
                     </div>
-                    <a href="repair-welding.html" class="services-one__arrow"><i
+                    <a href="#" class="services-one__arrow"><i
                             class="icon-right-arrow"></i></a>
                 </div>
                 <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="mechanical-expert.html">Deep Freezers & Cooling Equipment</a>
+                    <h3 class="services-one__title"><a href="#">Deep Freezers & Cooling Equipment</a>
                     </h3>
                 </div>
             </div>
             <!--Services One Single End-->
+
             <!--Services One Single Start-->
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="assets/images/services/services-1-2.jpg" alt="">
+                        <img src="images/service2.jpg" alt="">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
                         <span class="icon-house"></span>
                     </div>
-                    <a href="repair-welding.html" class="services-one__arrow"><i
+                    <a href="#" class="services-one__arrow"><i
                             class="icon-right-arrow"></i></a>
                 </div>
                 <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="repair-welding.html">Installation & Maintenance</a>
+                    <h3 class="services-one__title"><a href="#">Installation & Maintenance</a>
                     </h3>
                 </div>
             </div>
             <!--Services One Single End-->
+
             <!--Services One Single Start-->
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="assets/images/services/services-1-3.jpg" alt="">
+                        <img src="images/service3.jpg" alt="">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
                         <span class="icon-appartments"></span>
                     </div>
-                    <a href="appartment-design.html" class="services-one__arrow"><i
+                    <a href="#" class="services-one__arrow"><i
                             class="icon-right-arrow"></i></a>
                 </div>
                 <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="appartment-design.html">Industrial Chillers & Processing Plants</a>
+                    <h3 class="services-one__title"><a href="#">Industrial Chillers & Processing Plants</a>
                     </h3>
                 </div>
             </div>
             <!--Services One Single End-->
+
             <!--Services One Single Start-->
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="assets/images/services/services-1-1.jpg" alt="">
-                    </div>
-                    <div class="services-one__shape-1"></div>
-                    <div class="services-one__icon">
-                        <span class="icon-engineering"></span>
-                    </div>
-                    <a href="mechanical-expert.html" class="services-one__arrow"><i
-                            class="icon-right-arrow"></i></a>
-                </div>
-                <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="mechanical-expert.html">After-Sales Support</a>
-                    </h3>
-                </div>
-            </div>
-            <!--Services One Single End-->
-            <!--Services One Single Start-->
-            <div class="services-one__single">
-                <div class="services-one__img-box">
-                    <div class="services-one__img">
-                        <img src="assets/images/services/services-1-2.jpg" alt="">
+                        <img src="images/service4.jpg" alt="">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
                         <span class="icon-house"></span>
                     </div>
-                    <a href="repair-welding.html" class="services-one__arrow"><i
+                    <a href="#" class="services-one__arrow"><i
                             class="icon-right-arrow"></i></a>
                 </div>
                 <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="repair-welding.html">Nationwide Distribution Network</a>
+                    <h3 class="services-one__title"><a href="#">Nationwide Distribution Network</a>
                     </h3>
                 </div>
             </div>
