@@ -8,10 +8,10 @@
                 <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
                     data-wow-duration="2500ms">
                     <div class="about-one__img">
-                        <img src="images/04.jpg" alt="">
+                        <img src="images/04.jpg" alt="img">
                     </div>
                     <div class="about-one__img-2">
-                        <img src="assets/images/resources/about-one-img-2.jpg" alt="">
+                        <img src="images/2.jpg" alt="img">
                     </div>
                     <div class="about-one__experience">
                         <div class="about-one__experience-count-box">
