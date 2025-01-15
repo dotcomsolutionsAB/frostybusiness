@@ -1,148 +1,110 @@
 <?php
 // Database configuration
 $host = 'localhost';
-$dbname = 'tbl_';
-$username = 'tbl_';
-$password = 'Jzz4Qp1e5Za1k@can';
+$dbname = 'frostybusiness';
+$username = 'frostybusiness';
+$password = '1y5D^dn09';
 
-// Create a database connection
+// Connect to the database
 try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo json_encode(["message" => "Database connection failed: " . $e->getMessage()]);
-    exit;
+    die("Connection failed: " . $e->getMessage());
 }
 
-// Fetch Google Sheet paths where status == 0
-$stmt = $conn->prepare("SELECT * FROM google_sheet WHERE status = 0");
+// Fetch rows from google_sheet table where status = 0
+$sql = "SELECT * FROM google_sheet WHERE status = 0";
+$stmt = $pdo->prepare($sql);
 $stmt->execute();
-$googleSheets = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$sheets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-if (!$googleSheets) {
-    echo json_encode(["message" => "No Google Sheets with status 0 found."]);
-    exit;
-}
+foreach ($sheets as $sheet) {
+    $sheetId = $sheet['id'];
+    $sheetPath = $sheet['path'];
 
-foreach ($googleSheets as $sheet) {
-    $spreadsheetPath = $sheet['path'];
+    // Fetch data from Google Sheet URL
+    $sheetData = file_get_contents($sheetPath);
+    $rows = json_decode($sheetData, true); // Assuming the sheet returns JSON data
 
-    // Check if the path is a URL
-    if (filter_var($spreadsheetPath, FILTER_VALIDATE_URL)) {
-        // Fetch the Google Sheets content as CSV
-        $csvContent = file_get_contents($spreadsheetPath);
-        if ($csvContent === false) {
-            echo json_encode(["message" => "Failed to fetch the sheet: " . $sheet['name']]);
-            continue;
-        }
+    foreach ($rows as $row) {
+        $categoryName = $row['Category'];
+        $model = $row['Model'];
+        $name = $row['Name'];
 
-        // Parse the CSV content
-        $lines = explode(PHP_EOL, $csvContent);
-        $data = array_map('str_getcsv', $lines);
-    } else {
-        if (!file_exists($spreadsheetPath)) {
-            echo json_encode(["message" => "File not found: " . $spreadsheetPath]);
-            continue;
-        }
-
-        // Open the file and read data
-        $file = fopen($spreadsheetPath, 'r');
-        $data = [];
-        while (($row = fgetcsv($file)) !== false) {
-            $data[] = $row;
-        }
-        fclose($file);
-    }
-
-    if (count($data) < 2) { // Ensure there is data beyond the header row
-        echo json_encode(["message" => "No data found in the sheet: " . $sheet['name']]);
-        continue;
-    }
-
-    // Skip the header row
-    $headers = array_shift($data);
-
-    $addedCount = 0;        // Tracks newly added brands
-    $updatedCount = 0;      // Tracks updated brands
-    $incompleteCount = 0;   // Tracks rows with missing essential data
-    $totalRows = count($data); // Total rows excluding header
-
-    foreach ($data as $row) {
-        // Extract data with null coalescing to handle missing fields
-        $sn = $row[0] ?? null;
-        $categoryName = $row[1] ?? null;
-        $name = $row[2] ?? null;
-        $description = $row[3] ?? null;
-        $url = $row[4] ?? null;
-        $photo = $row[5] ?? null;
-
-        // Skip rows with missing essential data
-        if (!$categoryName || !$name) {
-            $incompleteCount++;
-            continue;
-        }
-
-        // Insert or fetch the category ID
-        $stmt = $conn->prepare("SELECT id FROM categories WHERE name = :name");
-        $stmt->execute([':name' => $categoryName]);
+        // Check if category exists
+        $sql = "SELECT id FROM categories WHERE name = :name";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['name' => $categoryName]);
         $category = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if (!$category) {
-            $stmt = $conn->prepare("INSERT INTO categories (name) VALUES (:name)");
-            $stmt->execute([':name' => $categoryName]);
-            $categoryId = $conn->lastInsertId();
+            // Insert new category
+            $sql = "INSERT INTO categories (name) VALUES (:name)";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(['name' => $categoryName]);
+            $categoryId = $pdo->lastInsertId();
         } else {
             $categoryId = $category['id'];
         }
 
-        // Check if the brand already exists
-        $stmt = $conn->prepare("SELECT id FROM brands WHERE name = :name");
-        $stmt->execute([':name' => $name]);
-        $brand = $stmt->fetch(PDO::FETCH_ASSOC);
+        // Check if product model exists
+        $sql = "SELECT id FROM products WHERE model = :model";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['model' => $model]);
+        $product = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!$brand) {
-            // Insert new brand
-            $stmt = $conn->prepare(
-                "INSERT INTO brands (name, category_id, description, url_link, photos) VALUES (:name, :category_id, :description, :url_link, :photos)"
-            );
+        if (!$product) {
+            // Insert new product
+            $details = generateHtmlTable($row, '_');
+            $features = generateHtmlTable($row, 'Feature');
+
+            $sql = "INSERT INTO products (model, name, category_id, sheet_id, image_id, features, details, created_at, updated_at) 
+                    VALUES (:model, :name, :category_id, :sheet_id, :image_id, :features, :details, NOW(), NOW())";
+            $stmt = $pdo->prepare($sql);
             $stmt->execute([
-                ':name' => $name,
-                ':category_id' => $categoryId,
-                ':description' => $description,
-                ':url_link' => $url,
-                ':photos' => $photo
+                'model' => $model,
+                'name' => $name,
+                'category_id' => $categoryId,
+                'sheet_id' => $sheetId,
+                'image_id' => 0,
+                'features' => $features,
+                'details' => $details
             ]);
-            $addedCount++;
+            $productId = $pdo->lastInsertId();
         } else {
-            // Update existing brand
-            $stmt = $conn->prepare(
-                "UPDATE brands SET category_id = :category_id, description = :description, url_link = :url_link, photos = :photos WHERE id = :id"
-            );
-            $stmt->execute([
-                ':id' => $brand['id'],
-                ':category_id' => $categoryId,
-                ':description' => $description,
-                ':url_link' => $url,
-                ':photos' => $photo
-            ]);
-            $updatedCount++;
+            $productId = $product['id'];
         }
+
+        // Insert variation
+        $detailsData = generateHtmlTable($row, '_');
+        $featuresData = generateHtmlTable($row, 'Feature');
+        $sql = "INSERT INTO variations (name, product_id, detail_data, features_data, created_at, updated_at) 
+                VALUES (:name, :product_id, :detail_data, :features_data, NOW(), NOW())";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            'name' => $name,
+            'product_id' => $productId,
+            'detail_data' => $detailsData,
+            'features_data' => $featuresData
+        ]);
     }
 
-    // Update the google_sheet status to 0
-    $stmt = $conn->prepare("UPDATE google_sheet SET status = 1 WHERE id = :id");
-    $stmt->execute([':id' => $sheet['id']]);
-
-    // Generate and output the response for this sheet
-    $response = [
-        "message" => "Sheet processed successfully.",
-        "sheet_name" => $sheet['name'],
-        "total_rows" => $totalRows,
-        "added_count" => $addedCount,
-        "updated_count" => $updatedCount,
-        "incomplete_count" => $incompleteCount
-    ];
-
-    echo json_encode($response);
+    // Update google_sheet table status to 1
+    $sql = "UPDATE google_sheet SET status = 1 WHERE id = :id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id' => $sheetId]);
 }
+
+function generateHtmlTable($row, $prefix) {
+    $html = '<table>';
+    foreach ($row as $key => $value) {
+        if (strpos($key, $prefix) === 0) {
+            $html .= "<tr><td>$key</td><td>$value</td></tr>";
+        }
+    }
+    $html .= '</table>';
+    return $html;
+}
+
 ?>

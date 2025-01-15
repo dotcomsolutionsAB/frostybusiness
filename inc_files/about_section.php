@@ -15,7 +15,7 @@
                     </div>
                     <div class="about-one__experience">
                         <div class="about-one__experience-count-box">
-                            <h3 class="odometer" data-count="35">00</h3>
+                            <h3 class="odometer" data-count="10">00</h3>
                         </div>
                         <p class="about-one__experience-text">Years
                             <br> Experience</p>
