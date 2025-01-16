@@ -59,6 +59,9 @@
                             <li>
                                 <a href="contact.php">Contact</a>
                             </li>
+                            <li>
+                                <a href="images/Borchure.pdf" target="_blank" rel="noopener noreferrer">Download</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="main-menu__search-cart-box">

@@ -14627,7 +14627,7 @@ ul {
 .page-header__inner {
   position: relative;
   display: block;
-  padding: 148px 0 212px;
+  padding: 15px 25px 70px 25px;
   z-index: 15;
 }
 
