@@ -36,15 +36,20 @@ if (!$product) {
 // Process features into a list format
 $features = array_filter(array_map('trim', explode("\n", $product['features'])));
 
-// Process details into table rows
 $detailsRows = array_filter(array_map(function($line) {
-    $columns = array_map('trim', explode("\t", $line));
-    if (count($columns) === 2) {
+    $line = trim($line); // Trim whitespace
+    if (empty($line)) return null; // Skip empty lines
+
+    // Adjust delimiter if needed (e.g., "\t", ",", or " - ")
+    $columns = preg_split('/\t| - |,/', $line);
+
+    if (count($columns) >= 2) {
         $columns[0] = ltrim($columns[0], '_'); // Remove leading underscore
-        return $columns;
+        return [trim($columns[0]), trim($columns[1])];
     }
     return null;
 }, explode("\n", $product['details'])));
+
 ?>
 
 <!DOCTYPE html>
