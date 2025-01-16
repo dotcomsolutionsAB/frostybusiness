@@ -35,7 +35,17 @@ if (!$product) {
 
 // Process features into a list format
 $features = array_filter(array_map('trim', explode("\n", $product['features'])));
-$details = trim($product['details']);
+
+// Process details into table rows
+$detailsRows = array_filter(array_map(function($line) {
+    $columns = array_map('trim', explode("\t", $line));
+    if (count($columns) === 2) {
+        $columns[0] = ltrim($columns[0], '_'); // Remove leading underscore
+        return $columns;
+    }
+    return null;
+}, explode("\n", $product['details'])));
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -128,10 +138,18 @@ $details = trim($product['details']);
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
                                 <p class="project-details__text-1">
-                                    <?php if (!empty($details)): ?>
+                                    <?php if (!empty($detailsRows)): ?>
                                         <p><strong>Details:</strong></p>
-                                        <div><?php echo $details; ?></div>
-                                    <?php endif; ?></p>
+                                        <table class="details-table">
+                                            <?php foreach ($detailsRows as $row): ?>
+                                                <tr>
+                                                    <td><?php echo htmlspecialchars($row[0]); ?></td>
+                                                    <td><?php echo htmlspecialchars($row[1]); ?></td>
+                                                </tr>
+                                            <?php endforeach; ?>
+                                        </table>
+                                    <?php endif; ?>
+                                </p>
 
                                 <div class="project-details__img-and-points">      
                                 <?php if (!empty($features)): ?>                              
