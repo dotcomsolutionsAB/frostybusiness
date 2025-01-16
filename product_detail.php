@@ -136,16 +136,27 @@ $detailsRows = array_filter(array_map(function($line) {
         <?php endif; ?>
 
         <?php if (!empty($detailsRows)): ?>
-            <p><strong>Details:</strong></p>
-            <table class="details-table">
-                <?php foreach ($detailsRows as $row): ?>
-                    <tr>
-                        <td><?php echo htmlspecialchars($row[0]); ?></td>
-                        <td><?php echo htmlspecialchars($row[1]); ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </table>
-        <?php endif; ?>
+    <p><strong>Details:</strong></p>
+    <table class="details-table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($detailsRows as $row): ?>
+                <tr>
+                    <td><?php echo htmlspecialchars($row[0]); ?></td>
+                    <td><?php echo htmlspecialchars($row[1]); ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php else: ?>
+    <p><em>No details available.</em></p>
+<?php endif; ?>
+
     </div>
 </body>
 </html>
