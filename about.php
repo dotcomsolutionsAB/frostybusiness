@@ -256,7 +256,7 @@
         <!--CTA One End-->
 
         <hr>
-            <?php include("inc_files/team.php"); ?>
+            <?php include("inc_files/teams.php"); ?>
         <hr>
 
         <!--Site Footer Start-->
