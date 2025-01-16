@@ -38,7 +38,7 @@
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="images/service1.jpg" alt="">
+                        <img src="images/service1.jpg" alt="" class="simg">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
@@ -58,7 +58,7 @@
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="images/service2.jpg" alt="">
+                        <img src="images/service2.jpg" alt="" class="simg">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
@@ -78,7 +78,7 @@
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="images/service3.jpg" alt="">
+                        <img src="images/service3.jpg" alt="" class="simg">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">
@@ -98,7 +98,7 @@
             <div class="services-one__single">
                 <div class="services-one__img-box">
                     <div class="services-one__img">
-                        <img src="images/service4.jpg" alt="">
+                        <img src="images/service4.jpg" alt="" class="simg">
                     </div>
                     <div class="services-one__shape-1"></div>
                     <div class="services-one__icon">

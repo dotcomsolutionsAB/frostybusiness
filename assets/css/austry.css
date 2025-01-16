@@ -4640,6 +4640,14 @@ ul {
   position: relative;
   display: block;
   overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.services-one__img .simg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .services-one__img:before {
