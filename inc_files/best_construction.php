@@ -1,5 +1,5 @@
 <div class="best-construction__shape-1 float-bob-x">
-    <img src="assets/images/shapes/best-construction-shape-1.png" alt="">
+    <img src="images/manufacturing.jpg" alt="918">
 </div>
 <div class="container">
     <div class="row">
