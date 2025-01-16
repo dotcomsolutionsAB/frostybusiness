@@ -1,41 +1,41 @@
-
 <?php
-    // Database configuration
-    $host = 'localhost';
-    $dbname = 'frostybusiness';
-    $username = 'frostybusiness';
-    $password = '1y5D^dn09';
+// Database configuration
+$host = 'localhost';
+$dbname = 'frostybusiness';
+$username = 'frostybusiness';
+$password = '1y5D^dn09';
 
-    try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        die("Connection failed: " . $e->getMessage());
-    }
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
 
-    if (!isset($_GET['model'])) {
-        die("Product model not specified.");
-    }
+if (!isset($_GET['model'])) {
+    die("Product model not specified.");
+}
 
-    $productModel = $_GET['model'];
+$productModel = $_GET['model'];
 
-    // Fetch product details
-    $stmt = $pdo->prepare(
-        "SELECT p.id, p.name AS product_name, p.model, p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
-        FROM products p
-        LEFT JOIN categories c ON p.category_id = c.id
-        LEFT JOIN uploads u ON p.image_id = u.id
-        WHERE p.model = :model"
-    );
-    $stmt->execute(['model' => $productModel]);
-    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+// Fetch product details
+$stmt = $pdo->prepare(
+    "SELECT p.id, p.name AS product_name, p.model, p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
+     FROM products p
+     LEFT JOIN categories c ON p.category_id = c.id
+     LEFT JOIN uploads u ON p.image_id = u.id
+     WHERE p.model = :model"
+);
+$stmt->execute(['model' => $productModel]);
+$product = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (!$product) {
-        die("Product not found.");
-    }
+if (!$product) {
+    die("Product not found.");
+}
 
-    // Process features into a list format
-    $features = array_filter(array_map('trim', explode("\n", $product['features'])));
+// Process features into a list format
+$features = array_filter(array_map('trim', explode("\n", $product['features'])));
+$details = trim($product['details']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -127,9 +127,14 @@
                         <div class="col-xl-8 col-lg-7">
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
-                                <p class="project-details__text-1"><?php echo nl2br(htmlspecialchars($product['details'])); ?></p>
+                                <p class="project-details__text-1">
+                                    <?php if (!empty($details)): ?>
+                                        <p><strong>Details:</strong></p>
+                                        <div><?php echo $details; ?></div>
+                                    <?php endif; ?></p>
 
-                                <div class="project-details__img-and-points">                                    
+                                <div class="project-details__img-and-points">      
+                                <?php if (!empty($features)): ?>                              
                                     <ul class="project-details__points-list list-unstyled">
                                         <?php foreach ($features as $feature): ?>
                                             <li>
@@ -142,6 +147,8 @@
                                             </li>
                                         <?php endforeach; ?>
                                     </ul>
+                                    <?php endif; ?>
+
                                 </div>
                             </div>
                         </div>

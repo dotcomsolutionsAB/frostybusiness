@@ -5475,8 +5475,13 @@ ul {
 .best-construction__img {
   position: relative;
   display: block;
+  height: 800px;
 }
-
+@media (max-width: 520px) {
+  .best-construction__img {
+    height: 400px;
+  }
+}
 .best-construction__img img {
   width: 100%;
 }
