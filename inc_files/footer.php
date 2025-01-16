@@ -1,5 +1,5 @@
 <div class="site-footer__img">
-    <img src="assets/images/resources/site-footer-img-1.jpg" alt="">
+    <img src="#" alt="">
 </div>
 <div class="container">
     <div class="site-footer__top">
@@ -36,7 +36,10 @@
                     <div class="footer-widget__title-box">
                         <h4 class="footer-widget__title">Address</h4>
                     </div>
-                    <p class="footer-widget__contact-text">Boral Main Road, Narendrapur <br> Kolkata - 700 103</p>
+                    <p class="footer-widget__contact-text">
+                        <i class="icon-location" style="color:#dcae53;"></i> 
+                    Boral Main Road, Narendrapur <br> Kolkata - 700 103
+                </p>
                     <!-- <ul class="footer-widget__Contact-list list-unstyled">
                         <li>
                             <div class="icon">
@@ -89,6 +92,14 @@
                                 <p><a href="tel:+917439298028">+91 74392 98028</a></p>
                             </div>
                         </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-telephone"></span>
+                            </div>
+                            <div class="text">
+                                <p><a href="tel:++918609236181">+91 86092 36181</a></p>
+                            </div>
+                        </li>
                     </ul>
                     <style>
                         .site-footer__social {
@@ -106,7 +117,7 @@
         </div>
     </div>
     <div class="site-footer__bottom">
-        <p class="site-footer__bottom-text">© Copyright 2025 by <a href="#">Dotcom Solutions</a></p>
+        <p class="site-footer__bottom-text">© Copyright 2025 by <a href="#">Dot Com Solutions</a></p>
         <!-- <ul class="list-unstyled site-footer__bottom-menu">
             <li><a href="about.html">Help</a></li>
             <li><a href="about.html">Privacy Policy</a></li>
