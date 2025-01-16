@@ -255,6 +255,10 @@
         </section>
         <!--CTA One End-->
 
+        <hr>
+            <?php include("inc_files/team.php"); ?>
+        <hr>
+
         <!--Site Footer Start-->
         <footer class="site-footer">
             <?php include("inc_files/footer.php"); ?>            

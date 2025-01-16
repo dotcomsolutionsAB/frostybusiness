@@ -182,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-details__pagination-box">
+                <!-- <div class="project-details__pagination-box">
                     <ul class="project-details__pagination list-unstyled clearfix">
                         <li class="next">
                             <a href="#" aria-label="Previous"><i class="icon-left-arrow"></i>Previous</a>
@@ -195,7 +195,7 @@
                             <a href="#" aria-label="Next">Next<i class="icon-right-arrow"></i></a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </section>
         <!--Project Details End-->
