@@ -36,119 +36,46 @@ if (!$product) {
 // Process features into a list format
 $features = array_filter(array_map('trim', explode("\n", $product['features'])));
 
-$detailsRows = array_filter(array_map(function($line) {
-    $line = trim($line); // Trim whitespace
-    if (empty($line)) return null; // Skip empty lines
+// Assuming the product details field contains the HTML table
+$detailsRaw = $product['details']; 
 
-    // Adjust delimiter if needed (e.g., "\t", ",", or " - ")
-    $columns = preg_split('/\t|,| - /', $line); 
-
-    if (count($columns) >= 2) {
-        $columns[0] = ltrim($columns[0], '_'); // Remove leading underscore
-        return [trim($columns[0]), trim($columns[1])];
+// Check if details are present
+if (!empty($detailsRaw)) {
+    // Create a new DOMDocument object to parse the HTML
+    $dom = new DOMDocument();
+    
+    // Load the HTML content into the DOM object
+    libxml_use_internal_errors(true);  // Suppress warnings for malformed HTML
+    $dom->loadHTML('<?xml encoding="UTF-8">' . $detailsRaw);  // Prevent warnings related to encoding
+    libxml_clear_errors();
+    
+    // Get all the table rows
+    $rows = $dom->getElementsByTagName('tr');
+    
+    // Initialize an array to hold the processed details
+    $detailsRows = [];
+    
+    foreach ($rows as $row) {
+        $cells = $row->getElementsByTagName('td');
+        
+        // Ensure there are exactly two cells (key and value)
+        if ($cells->length == 2) {
+            $key = trim($cells->item(0)->textContent);  // Extract the key (left column)
+            $value = trim($cells->item(1)->textContent); // Extract the value (right column)
+            
+            // Clean up the key (e.g., remove leading underscores)
+            $key = ltrim($key, '_');
+            
+            // Add the key-value pair to the array
+            $detailsRows[] = [$key, $value];
+        }
     }
-
-    return null; // Skip invalid lines
-}, explode("\n", $product['details'])));
-
-// Debug processed rows
-echo "<pre>";
-print_r($detailsRows);
-echo "</pre>";
-exit;
-
-
+} else {
+    $detailsRows = [];
+}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .product-details {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .product-details img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 20px;
-        }
-        .product-details h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .product-details p {
-            margin: 5px 0;
-        }
-        .features-list {
-            list-style: none;
-            padding: 0;
-        }
-        .features-list li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .features-list .icon {
-            color: green;
-            margin-right: 10px;
-        }
-        .details-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        .details-table th, .details-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .details-table th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <div class="product-details">
-        <h1><?php echo htmlspecialchars($product['product_name']); ?></h1>
-        <p><strong>Model:</strong> <?php echo htmlspecialchars($product['model']); ?></p>
-        <p><strong>Category:</strong> <?php echo htmlspecialchars($product['category_name']); ?></p>
-
-        <?php if (!empty($product['path'])): ?>
-            <img src="<?php echo htmlspecialchars($product['path']); ?>" alt="<?php echo htmlspecialchars($product['file_original_name']); ?>">
-        <?php else: ?>
-            <p><em>No image available.</em></p>
-        <?php endif; ?>
-
-        <?php if (!empty($features)): ?>
-            <p><strong>Features:</strong></p>
-            <ul class="features-list">
-                <?php foreach ($features as $feature): ?>
-                    <li>
-                        <div class="icon">
-                            <span class="fa fa-check"></span>
-                        </div>
-                        <div class="text">
-                            <p><?php echo htmlspecialchars($feature); ?></p>
-                        </div>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        <?php endif; ?>
-
-        <?php if (!empty($detailsRows)): ?>
+<?php if (!empty($detailsRows)): ?>
     <p><strong>Details:</strong></p>
     <table class="details-table">
         <thead>
@@ -171,6 +98,3 @@ exit;
 <?php endif; ?>
 
 
-    </div>
-</body>
-</html>
