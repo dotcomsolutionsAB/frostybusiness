@@ -45,251 +45,107 @@ $detailsRows = array_filter(array_map(function($line) {
     }
     return null;
 }, explode("\n", $product['details'])));
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <?php include("inc_files/fav_code.php"); ?>
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/vendors/austry-icons/style.css">
-    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
-
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/austry.css" />
-    <link rel="stylesheet" href="assets/css/austry-responsive.css" />
-</head>
-
-<body>
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <!-- /.preloader -->
-
-    <div class="page-wrapper">
-        <header class="main-header">
-            <?php include("inc_files/top_header.php"); ?>
-            <?php include("inc_files/navbar.php"); ?>
-        </header>
-        <?php include("inc_files/sticky_header.php"); ?>
-
-        <!--Page Header Start-->
-        <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(#)">
-            </div>
-
-            <div class="container">
-                <div class="page-header__inner">
-                    <h2>Product Details</h2>
-                    <div class="thm-breadcrumb__box">
-                        <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="">Home</a></li>
-                            <li><span>/</span></li>
-                            <li>Product</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Page Header End-->
-
-        <!--Project Details Start-->
-        <section class="project-details">
-            <div class="container">
-                <?php if (!empty($product['path'])): ?>
-                <div class="project-details__img">
-                    <img src="<?php echo htmlspecialchars($product['path']); ?>" alt="Product image">
-                </div>
-                <?php else: ?>
-                     <p><em>No image available.</em></p>
-                <?php endif; ?>
-                <div class="project-details__content">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="project-details__content-left">
-                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
-                                <p class="project-details__text-1">
-                                    <?php if (!empty($detailsRows)): ?>
-                                        <p><strong>Details:</strong></p>
-                                        <table class="details-table">
-                                            <?php foreach ($detailsRows as $row): ?>
-                                                <tr>
-                                                    <td><?php echo htmlspecialchars($row[0]); ?></td>
-                                                    <td><?php echo htmlspecialchars($row[1]); ?></td>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        </table>
-                                    <?php endif; ?>
-                                </p>
-
-                                <div class="project-details__img-and-points">      
-                                <?php if (!empty($features)): ?>                              
-                                    <ul class="project-details__points-list list-unstyled">
-                                        <?php foreach ($features as $feature): ?>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="fa fa-check"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <p><?php echo htmlspecialchars($feature); ?></p>
-                                                </div>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                    <?php endif; ?>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="project-details__content-right">
-                                <div class="project-details__info">
-                                    <ul class="list-unstyled project-details__info-list">
-                                        <li>
-                                            <p>Date</p>
-                                            <h4>30 July, 2023</h4>
-                                        </li>
-                                        <li>
-                                            <p>Client</p>
-                                            <h4>Themeforest, Envato</h4>
-                                        </li>
-                                        <li>
-                                            <p>Website</p>
-                                            <h4><a href="#">austry.com</a></h4>
-                                        </li>
-                                        <li>
-                                            <p>Location</p>
-                                            <h4>New York, USA</h4>
-                                        </li>
-                                        <li>
-                                            <p>Value</p>
-                                            <h4>$25,60000</h4>
-                                        </li>
-                                    </ul>
-                                    <div class="project-details__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="project-details__pagination-box">
-                    <ul class="project-details__pagination list-unstyled clearfix">
-                        <li class="next">
-                            <a href="#" aria-label="Previous"><i class="icon-left-arrow"></i>Previous</a>
-                        </li>
-                        <li class="count"><a href="#"></a></li>
-                        <li class="count"><a href="#"></a></li>
-                        <li class="count"><a href="#"></a></li>
-                        <li class="count"><a href="#"></a></li>
-                        <li class="previous">
-                            <a href="#" aria-label="Next">Next<i class="icon-right-arrow"></i></a>
-                        </li>
-                    </ul>
-                </div> -->
-            </div>
-        </section>
-        <!--Project Details End-->
-
-        <!--Site Footer Start-->
-        <footer class="site-footer">
-            <?php include("inc_files/footer.php"); ?>            
-        </footer>
-        <!--Site Footer End-->
-
-
-    </div><!-- /.page-wrapper -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
     <style>
-        .mobile-nav__content .logo-box {
-            margin-bottom: 40px;
-            display: -webkit-box;
-            display: -ms-flexbox;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .product-details {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .product-details img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .product-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-details p {
+            margin: 5px 0;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        .features-list li {
             display: flex;
-            background: #fff;
-            justify-content: center;
-            width: fit-content;
-            padding: 5px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .features-list .icon {
+            color: green;
+            margin-right: 10px;
+        }
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .details-table th, .details-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .details-table th {
+            background-color: #f4f4f4;
         }
     </style>
-    <div class="mobile-nav__wrapper">
-        <?php include("inc_files/mobile_wrap.php"); ?>
+</head>
+<body>
+    <div class="product-details">
+        <h1><?php echo htmlspecialchars($product['product_name']); ?></h1>
+        <p><strong>Model:</strong> <?php echo htmlspecialchars($product['model']); ?></p>
+        <p><strong>Category:</strong> <?php echo htmlspecialchars($product['category_name']); ?></p>
+
+        <?php if (!empty($product['path'])): ?>
+            <img src="<?php echo htmlspecialchars($product['path']); ?>" alt="<?php echo htmlspecialchars($product['file_original_name']); ?>">
+        <?php else: ?>
+            <p><em>No image available.</em></p>
+        <?php endif; ?>
+
+        <?php if (!empty($features)): ?>
+            <p><strong>Features:</strong></p>
+            <ul class="features-list">
+                <?php foreach ($features as $feature): ?>
+                    <li>
+                        <div class="icon">
+                            <span class="fa fa-check"></span>
+                        </div>
+                        <div class="text">
+                            <p><?php echo htmlspecialchars($feature); ?></p>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+        <?php if (!empty($detailsRows)): ?>
+            <p><strong>Details:</strong></p>
+            <table class="details-table">
+                <?php foreach ($detailsRows as $row): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($row[0]); ?></td>
+                        <td><?php echo htmlspecialchars($row[1]); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php endif; ?>
     </div>
-    <!-- /.mobile-nav__wrapper -->
-
-    <div class="search-popup">
-        <?php include("inc_files/searchbar_content.php"); ?>        
-    </div>
-    <!-- /.search-popup -->
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
-
-    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
-    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/countdown/countdown.min.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/vegas/vegas.min.js"></script>
-    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/vendors/timepicker/timePicker.js"></script>
-    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
-    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
-    <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
-
-
-
-
-    <!-- template js -->
-    <script src="assets/js/austry.js"></script>
 </body>
-
 </html>
