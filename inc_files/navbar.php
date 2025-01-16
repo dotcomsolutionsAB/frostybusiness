@@ -1,7 +1,7 @@
 <nav class="main-menu">
     <div class="main-menu__wrapper">
         <div class="main-menu__btn">
-            <a href="contact.html">Get a free quote</a>
+            <a href="images/Borchure.pdf">Get a free quote</a>
         </div>
         <div class="main-menu__call">
             <div class="main-menu__call-icon">
@@ -12,6 +12,7 @@
                 <h5 class="main-menu__call-number"><a href="tel:+917439298028">+91 74392 98028</a></h5>
             </div>
         </div>
+
         <style>
             .imgx{
                 width:100px !important;
@@ -58,9 +59,6 @@
                             </li>                            
                             <li>
                                 <a href="contact.php">Contact</a>
-                            </li>
-                            <li>
-                                <a href="images/Borchure.pdf" target="_blank" rel="noopener noreferrer">Download</a>
                             </li>
                         </ul>
                     </div>
