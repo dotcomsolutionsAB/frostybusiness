@@ -1,5 +1,5 @@
 <div class="best-construction__shape-1 float-bob-x">
-    <img src="images/manufacturing.jpg" alt="918">
+    <img src="assets/images/shapes/best-construction-shape-1.png" alt="">
 </div>
 <div class="container">
     <div class="row">
@@ -36,7 +36,7 @@
             <div class="best-construction__right">
                 <div class="best-construction__img-box">
                     <div class="best-construction__img">
-                        <img src="assets/images/resources/best-construction-img-1.jpg" alt="">
+                        <img src="images/manufacturing.jpg" alt="918">
                     </div>
                     <div class="best-construction__name">
                         <p>Green Air - Frosty</p>
