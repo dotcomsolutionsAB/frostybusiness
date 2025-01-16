@@ -68,7 +68,7 @@
                             class="icon-right-arrow"></i></a>
                 </div>
                 <div class="services-one__content">
-                    <h3 class="services-one__title"><a href="#">Installation & Maintenance</a>
+                    <h3 class="services-one__title"><a href="#">Lifecycle support Installation & Maintenance</a>
                     </h3>
                 </div>
             </div>

@@ -111,7 +111,7 @@
                                             </div>
                                         </div>
                                         <div class="project-two__content">
-                                            <p class="project-two__sub-title"><b><?php echo htmlspecialchars($product['category_name']); ?></b></p>
+                                            <p class="project-two__sub-title"><b><?php echo htmlspecialchars($product['model']); ?></b></p>
                                             <h3 class="project-two__title">
                                                 <a href="product_detail.php?model=<?php echo urlencode($product['model']); ?>"><?php echo htmlspecialchars($product['product_name']); ?></a>
                                             </h3>
