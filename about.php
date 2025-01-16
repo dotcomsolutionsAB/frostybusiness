@@ -249,7 +249,7 @@
             <div class="container">
                 <div class="cta-one__inner">
                     <h3 class="cta-one__title">Quality, affordable, manufacturing <br> and industrial services</h3>
-                    <a href="about.html" class="thm-btn cta-one__btn">Discover more</a>
+                    <a href="about.php" class="thm-btn cta-one__btn">Discover more</a>
                 </div>
             </div>
         </section>

@@ -62,12 +62,12 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(#)">
             </div>
 
             <div class="container">
                 <div class="page-header__inner">
-                    <h2>Contact</h2>
+                    <h2>Contact Us</h2>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
                             <li><a href="">Home</a></li>

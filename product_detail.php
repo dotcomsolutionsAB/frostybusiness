@@ -1,3 +1,42 @@
+
+<?php
+    // Database configuration
+    $host = 'localhost';
+    $dbname = 'frostybusiness';
+    $username = 'frostybusiness';
+    $password = '1y5D^dn09';
+
+    try {
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die("Connection failed: " . $e->getMessage());
+    }
+
+    if (!isset($_GET['model'])) {
+        die("Product model not specified.");
+    }
+
+    $productModel = $_GET['model'];
+
+    // Fetch product details
+    $stmt = $pdo->prepare(
+        "SELECT p.id, p.name AS product_name, p.model, p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
+        FROM products p
+        LEFT JOIN categories c ON p.category_id = c.id
+        LEFT JOIN uploads u ON p.image_id = u.id
+        WHERE p.model = :model"
+    );
+    $stmt->execute(['model' => $productModel]);
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if (!$product) {
+        die("Product not found.");
+    }
+
+    // Process features into a list format
+    $features = array_filter(array_map('trim', explode("\n", $product['features'])));
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,16 +80,10 @@
 </head>
 
 <body>
-
-
-
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
     <!-- /.preloader -->
-
-
-
 
     <div class="page-wrapper">
         <header class="main-header">
@@ -59,20 +92,19 @@
         </header>
         <?php include("inc_files/sticky_header.php"); ?>
 
-
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(#)">
             </div>
 
             <div class="container">
                 <div class="page-header__inner">
-                    <h2>Project Details</h2>
+                    <h2>Product Details</h2>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
                             <li><a href="">Home</a></li>
                             <li><span>/</span></li>
-                            <li>Project</li>
+                            <li>Product</li>
                         </ul>
                     </div>
                 </div>
@@ -83,80 +115,37 @@
         <!--Project Details Start-->
         <section class="project-details">
             <div class="container">
+                <?php if (!empty($product['path'])): ?>
                 <div class="project-details__img">
-                    <img src="assets/images/project/project-details-img-1.jpg" alt="">
+                    <img src="<?php echo htmlspecialchars($product['path']); ?>" alt="Product image">
                 </div>
+                <?php else: ?>
+                     <p><em>No image available.</em></p>
+                <?php endif; ?>
                 <div class="project-details__content">
                     <div class="row">
                         <div class="col-xl-8 col-lg-7">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1">Jelewre Mutual Maintanance</h3>
-                                <p class="project-details__text-1">There are many variations of passages of psum
-                                    available, but the majority have suffered alteration in some form, by injected
-                                    humour, or randomised words which don't look even slightly believable. If you are
-                                    going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                                    embarrassing hidden in the middle of text. Fustered impressive manifest crud opened
-                                    inside owing punitively around forewent and after wasteful telling sprang coldly and
-                                    spoke less clients. Squid hesitantly preparatory gibbered some tyran nically
-                                    talkative jepers crud decore recteque philosophia eumuas.</p>
-                                <p class="project-details__text-2">Beyond more stoic this along goodness hey this this
-                                    wow manatee mongoose one as since a far flustered impressive manifest far crud
-                                    opened inside owing punitively around forewent and after wasteful telling sprang
-                                    coldly and spoke less clients. Squid hesitantly preparatory gibbered some tyran</p>
-                                <h3 class="project-details__title-2">Project Challenges</h3>
-                                <p class="project-details__text-3">Eque porro est qui dolorem ipsum quia quaed inventore
-                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-                                    quis enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is
-                                    simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                    ndustry stan when an unknown printer took a galley.</p>
-                                <p class="project-details__text-4">Making this the first true generator on the Internet.
-                                </p>
-                                <p class="project-details__text-5">When an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining essentially unchanged. It
-                                    was popularised in the 1960s with the release of Letraset sheets containing. Neque
-                                    porro est qui dolorem ipsumo.</p>
-                                <div class="project-details__img-and-points">
-                                    <div class="project-details__img-2">
-                                        <img src="assets/images/project/project-details-img-2.jpg" alt="">
-                                    </div>
+                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
+                                <p class="project-details__text-1"><?php echo nl2br(htmlspecialchars($product['details'])); ?></p>
+
+                                <div class="project-details__img-and-points">                                    
                                     <ul class="project-details__points-list list-unstyled">
-                                        <li>
-                                            <div class="icon">
-                                                <span class="fa fa-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem Ipsum generators on the Internet</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="fa fa-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>It uses a dictionary of over words</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="fa fa-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>The majority have alteration in some form</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="fa fa-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>There are many variations of passages</p>
-                                            </div>
-                                        </li>
+                                        <?php foreach ($features as $feature): ?>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="fa fa-check"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <p><?php echo htmlspecialchars($feature); ?></p>
+                                                </div>
+                                            </li>
+                                        <?php endforeach; ?>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-xl-4 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
@@ -219,7 +208,6 @@
 
 
     </div><!-- /.page-wrapper -->
-
 
     <style>
         .mobile-nav__content .logo-box {
