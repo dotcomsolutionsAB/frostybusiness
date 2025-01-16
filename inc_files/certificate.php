@@ -3,7 +3,7 @@
         <span class="section-title__tagline">Certificate</span>
         <h2 class="section-title__title">Our IOC Certificate</h2>
     </div>
-    <div class="row">
+    <div class="row cir">
         <!--Team One Single Start-->
         <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
             <div class="team-one__single">
@@ -38,7 +38,7 @@
                     <div class="team-one__content">
                         <div class="team-one__info">
                             <p class="team-one__sub-title">Green Air</p>
-                            <h3 class="team-one__name"><a href="team.html">IOC</a></h3>
+                            <h3 class="team-one__name"><a href="team.html">IOC Certificate</a></h3>
                         </div>
                     </div>
                     <div class="team-one__social">

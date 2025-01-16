@@ -5555,7 +5555,10 @@ ul {
 .team-one__single:hover .team-one__img img {
   transform: scale(1.1) rotate(2deg);
 }
-
+.row .cir{
+  display: flex;
+  justify-content: center;
+}
 .team-one__content {
   position: absolute;
   bottom: -18px;
@@ -5569,7 +5572,10 @@ ul {
 
 .team-one__info {
   position: relative;
-  display: block;
+  display: flex  ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-one__sub-title {

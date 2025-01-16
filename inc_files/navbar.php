@@ -1,7 +1,7 @@
 <nav class="main-menu">
     <div class="main-menu__wrapper">
         <div class="main-menu__btn">
-            <a href="images/Borchure.pdf">Get a free quote</a>
+            <a href="images/Borchure.pdf">Download PDF</a>
         </div>
         <div class="main-menu__call">
             <div class="main-menu__call-icon">
