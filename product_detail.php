@@ -41,14 +41,22 @@ $detailsRows = array_filter(array_map(function($line) {
     if (empty($line)) return null; // Skip empty lines
 
     // Adjust delimiter if needed (e.g., "\t", ",", or " - ")
-    $columns = preg_split('/\t| - |,/', $line);
+    $columns = preg_split('/\t|,| - /', $line); 
 
     if (count($columns) >= 2) {
         $columns[0] = ltrim($columns[0], '_'); // Remove leading underscore
         return [trim($columns[0]), trim($columns[1])];
     }
-    return null;
+
+    return null; // Skip invalid lines
 }, explode("\n", $product['details'])));
+
+// Debug processed rows
+echo "<pre>";
+print_r($detailsRows);
+echo "</pre>";
+exit;
+
 
 ?>
 
@@ -161,6 +169,7 @@ $detailsRows = array_filter(array_map(function($line) {
 <?php else: ?>
     <p><em>No details available.</em></p>
 <?php endif; ?>
+
 
     </div>
 </body>
