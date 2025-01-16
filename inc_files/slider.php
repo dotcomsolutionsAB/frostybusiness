@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="main-slider__content">
-                            <h2 class="main-slider__title">nnovative Cooling Solutions<br> for a Changing World</h2>
+                            <h2 class="main-slider__title">Innovative Cooling Solutions<br> for a Changing World</h2>
                             <p class="main-slider__text">Harnessing the latest technology to deliver cutting-edge <br>  refrigeration systems</p>
                             <div class="main-slider__btn-box">
                                 <a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
