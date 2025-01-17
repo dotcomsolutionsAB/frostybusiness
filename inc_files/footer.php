@@ -11,11 +11,11 @@
                             <img src="images/logo2.png" alt="logo" style="width: 140px; height: 100px;">
                         </a>
                     </div>
-                    <!-- <div class="footer-widget__about-text-box">
+                    <div class="footer-widget__about-text-box">
                         <p class="footer-widget__about-text">
                             Green Air (Frosty) delivers innovative refrigeration solutions with quality and efficiency since 2010, serving diverse industries nationwide.</p>
                     </div>
-                    <div class="footer-widget__about-btn-box">
+                    <!-- <div class="footer-widget__about-btn-box">
                         <a href="contact.php" class="footer-widget__about-btn thm-btn">Contact</a>
                     </div> -->
                 </div>
@@ -37,10 +37,12 @@
                     <div class="footer-widget__title-box">
                         <h4 class="footer-widget__title">Address</h4>
                     </div>
-                    <p class="footer-widget__contact-text">
+                    <div class="divvv">
                         <i class="icon-location" style="color:#dcae53;"></i> 
-                    Boral Main Road, Narendrapur <br> Kolkata - 700 103
-                </p>
+                        <p class="footer-widget__contact-text">                        
+                            Boral Main Road, Narendrapur <br> Kolkata - 700 103
+                        </p>
+                    </div>
                     <!-- <ul class="footer-widget__Contact-list list-unstyled">
                         <li>
                             <div class="icon">
@@ -108,6 +110,10 @@
                         }
                         .site-footer__social {
                             justify-content: flex-start;
+                        }
+                        .divvv{
+                            display:flex;
+                            justify-content:space-between;
                         }
                     </style>
                     <!-- <div class="site-footer__social">
