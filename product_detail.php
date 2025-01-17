@@ -249,7 +249,7 @@ if (!empty($detailsRaw)) {
         border: 2px solid #f5f5f5 !important;
     }
 
-    @media (min-width: 520px) {
+    @media (min-width: 480px) {
         .details_table{
             width: 350px !important;
         }
