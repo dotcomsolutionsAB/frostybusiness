@@ -117,7 +117,7 @@
                         }
                         .divvv{
                             display:flex;
-                            justify-content:space-between;
+                            /* justify-content:space-between; */
                         }
                     </style>
                     <!-- <div class="site-footer__social">

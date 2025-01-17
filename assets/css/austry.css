@@ -6389,8 +6389,9 @@ ul {
   font-size: 15px;
   color: #fff;
   line-height: 26px;
-  padding-top: 3px;
+  /* padding-top: 3px; */
   font-weight: 700;
+  margin-left: 15px;
 }
 
 .footer-widget__Contact-list {
