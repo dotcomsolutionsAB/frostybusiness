@@ -105,7 +105,7 @@
                         </li>
                     </ul>
                     <style>
-                        .icon-location:before {
+                        .divvv .icon-location:before {
                             color:#fff;
                             padding-top: 3px;
                             font-weight: bold;
