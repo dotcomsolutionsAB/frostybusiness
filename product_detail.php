@@ -185,7 +185,7 @@ if (!empty($detailsRaw)) {
                                 <p class="project-details__text-1">
                                     <?php if (!empty($detailsRows)): ?>
                                         <p><strong>Details:</strong></p>
-                                        <table class="details-table">
+                                        <table class="details_table">
                                             <thead>
                                                 <tr>
                                                     <th>Property</th>
@@ -232,25 +232,25 @@ if (!empty($detailsRaw)) {
                             </div>
                         </div>
 <style>
-    .project-details__text-1 .details-table{
+    .details-table{
         width:400px !important;
     }
-    .project-details__text-1 .details-table thead{
+    .details-table thead{
         background: #dcae53f7 !important;
         color: #fff !important;
         text-align: center !important;
     }
-    .project-details__text-1 .details-table tbody{
+    .details-table tbody{
         background: #b68b37e3 !important;
         text-align: justify !important;
         color: #fff !important;
     }
-    .project-details__text-1 .details-table th,td{
+    .details-table th,td{
         border: 2px solid #f5f5f5 !important;
     }
 
     @media (min-width: 520px) {
-        .project-details__text-1 .details-table{
+        .details-table{
             width: 350px !important;
         }
     }
