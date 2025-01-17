@@ -232,25 +232,25 @@ if (!empty($detailsRaw)) {
                             </div>
                         </div>
 <style>
-    .details-table{
+    .details_table{
         width:400px !important;
     }
-    .details-table thead{
+    .details_table thead{
         background: #dcae53f7 !important;
         color: #fff !important;
         text-align: center !important;
     }
-    .details-table tbody{
+    .details_table tbody{
         background: #b68b37e3 !important;
         text-align: justify !important;
         color: #fff !important;
     }
-    .details-table th,td{
+    .details_table th,td{
         border: 2px solid #f5f5f5 !important;
     }
 
     @media (min-width: 520px) {
-        .details-table{
+        .details_table{
             width: 350px !important;
         }
     }
