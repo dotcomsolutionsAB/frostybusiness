@@ -100,13 +100,17 @@
                                 <span class="icon-telephone"></span>
                             </div>
                             <div class="text">
-                                <p><a href="tel:++918609236181">+91 86092 36181</a></p>
+                                <p><a href="tel:+918609236181">+91 86092 36181</a></p>
                             </div>
                         </li>
                     </ul>
                     <style>
                         .icon-location:before {
                             color:#fff;
+                            padding-top: 3px;
+                            font-weight: bold;
+                            font-size: 24px;
+
                         }
                         .site-footer__social {
                             justify-content: flex-start;
@@ -134,3 +138,37 @@
         </ul> -->
     </div>
 </div>
+
+<div class="whatsapp-icon">
+    <a href="https://wa.me/+918609236181" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+</div>
+<style>
+    .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+</style>

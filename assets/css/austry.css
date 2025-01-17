@@ -756,6 +756,7 @@ ul {
 .main-header__top-text {
   font-size: 12px;
   line-height: 12px;
+  font-weight: bold;
 }
 
 .main-header__social {
@@ -820,7 +821,7 @@ ul {
 
 .main-header__contact-list li .text p {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main-header__contact-list li .text p a {
@@ -6389,6 +6390,7 @@ ul {
   color: #fff;
   line-height: 26px;
   padding-top: 3px;
+  font-weight: 700;
 }
 
 .footer-widget__Contact-list {
