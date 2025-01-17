@@ -232,7 +232,7 @@ if (!empty($detailsRaw)) {
                             </div>
                         </div>
 
-                        <div class="col-xl-4 col-lg-5">
+                        <!-- <div class="col-xl-4 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
                                     <ul class="list-unstyled project-details__info-list">
@@ -265,7 +265,7 @@ if (!empty($detailsRaw)) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- <div class="project-details__pagination-box">
