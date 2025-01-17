@@ -231,7 +231,30 @@ if (!empty($detailsRaw)) {
                                 </div>
                             </div>
                         </div>
+<style>
+    .project-details__text-1 .details-table{
+        width:400px !important;
+    }
+    .project-details__text-1 .details-table thead{
+        background: #dcae53f7 !important;
+        color: #fff !important;
+        text-align: center !important;
+    }
+    .project-details__text-1 .details-table tbody{
+        background: #b68b37e3 !important;
+        text-align: justify !important;
+        color: #fff !important;
+    }
+    .project-details__text-1 .details-table th,td{
+        border: 2px solid #f5f5f5 !important;
+    }
 
+    @media (min-width: 520px) {
+        .project-details__text-1 .details-table{
+            width: 350px !important;
+        }
+    }
+</style>
                         <!-- <div class="col-xl-4 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
