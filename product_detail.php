@@ -182,9 +182,11 @@ if (!empty($detailsRaw)) {
                         <div class="col-xl-8 col-lg-7">
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3> 
-                                <h4>
-                                    <span style="color:grey;">Category : </span><?php echo htmlspecialchars($product['category_name']); ?> <br>
-                                    <span style="color:grey;">Model : </span><?php echo htmlspecialchars($product['model']); ?></h4>                                 
+                                <h4 class="hh">
+                                    <p><span style="color:grey;">Category : </span><?php echo htmlspecialchars($product['category_name']); ?></p>
+                                    <br>
+                                    <p><span style="color:grey;">Model : </span><?php echo htmlspecialchars($product['model']); ?></p>
+                                </h4>                                 
                                 <div class="project-details__img-and-points">      
                                     <?php if (!empty($features)): ?>
                                         <p><strong>Features:</strong></p>
@@ -211,6 +213,10 @@ if (!empty($detailsRaw)) {
                             </div>
                         </div>
 <style>
+    .hh{
+        display: flex;
+        justify-content: space-evenly;
+    }
     .details_table{
         /* width:400px !important; */
     }
@@ -241,7 +247,7 @@ if (!empty($detailsRaw)) {
                                 <div class="project-details__info">
                                 <p class="project-details__text-1">
                                     <?php if (!empty($detailsRows)): ?>
-                                        <p><strong>Details:</strong></p>
+                                        <p style="color:#fff;"><strong>Details:</strong></p>
                                         <table class="details_table">
                                             <thead>
                                                 <tr>
