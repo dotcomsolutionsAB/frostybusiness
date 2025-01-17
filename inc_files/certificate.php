@@ -42,7 +42,8 @@
                         </div>
                     </div>
                     <div class="team-one__social">
-                        <a href="images/certificateIOC.pdf" target="_blank">ISO Certificate<i class="fas fa-arrow-right"></i></a>
+                        <!-- <a href="images/certificateIOC.pdf" target="_blank">ISO Certificate <i class="fas fa-arrow-right"></i></a> -->
+                        <a href="#">ISO Certificate  <i class="fas fa-arrow-right"></i></a>
                         <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a> -->
