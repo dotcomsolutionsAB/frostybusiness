@@ -182,11 +182,11 @@ if (!empty($detailsRaw)) {
                         <div class="col-xl-8 col-lg-7">
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3> 
-                                <h4 class="hh">
-                                    <p><span style="color:grey;">Category : </span><?php echo htmlspecialchars($product['category_name']); ?></p>
+                                <h5 class="hh">
+                                    <p style="color:#dcae53;"><span style="color:grey;">Category : </span><?php echo htmlspecialchars($product['category_name']); ?></p>
                                     <br>
                                     <p><span style="color:grey;">Model : </span><?php echo htmlspecialchars($product['model']); ?></p>
-                                </h4>                                 
+                                </h5>                                 
                                 <div class="project-details__img-and-points">      
                                     <?php if (!empty($features)): ?>
                                         <p><strong>Features:</strong></p>
@@ -216,6 +216,7 @@ if (!empty($detailsRaw)) {
     .hh{
         display: flex;
         justify-content: space-evenly;
+        gap: 30px;
     }
     .details_table{
         /* width:400px !important; */
