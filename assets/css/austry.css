@@ -757,6 +757,9 @@ ul {
   font-size: 12px;
   line-height: 12px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-header__social {
