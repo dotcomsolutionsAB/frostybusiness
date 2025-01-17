@@ -11,12 +11,13 @@
                             <img src="images/logo2.png" alt="logo" style="width: 140px; height: 100px;">
                         </a>
                     </div>
-                    <div class="footer-widget__about-text-box">
-                        <p class="footer-widget__about-text">Green Air (Frosty) delivers innovative refrigeration solutions with quality and efficiency since 2010, serving diverse industries nationwide.</p>
+                    <!-- <div class="footer-widget__about-text-box">
+                        <p class="footer-widget__about-text">
+                            Green Air (Frosty) delivers innovative refrigeration solutions with quality and efficiency since 2010, serving diverse industries nationwide.</p>
                     </div>
                     <div class="footer-widget__about-btn-box">
                         <a href="contact.php" class="footer-widget__about-btn thm-btn">Contact</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
@@ -102,6 +103,9 @@
                         </li>
                     </ul>
                     <style>
+                        .icon-location:before {
+                            color:#fff;
+                        }
                         .site-footer__social {
                             justify-content: flex-start;
                         }

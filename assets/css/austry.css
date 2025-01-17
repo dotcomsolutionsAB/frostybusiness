@@ -6264,8 +6264,8 @@ ul {
 .site-footer__top {
   position: relative;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .footer-widget__about {
@@ -6350,7 +6350,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  color: #dee2e6;
+  color: #fff;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
@@ -6386,7 +6386,7 @@ ul {
 
 .footer-widget__contact-text {
   font-size: 15px;
-  color: #dee2e6;
+  color: #fff;
   line-height: 26px;
   padding-top: 3px;
 }
