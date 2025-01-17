@@ -181,31 +181,30 @@ if (!empty($detailsRaw)) {
                     <div class="row">
                         <div class="col-xl-6 col-lg-7">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
-                                <div class="div1">
-                                    <p class="project-details__text-1"></p>
-                                    <?php if (!empty($detailsRows)): ?>
-                                        <p><strong>Details:</strong></p>
-                                        <table class="details_table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Property</th>
-                                                    <th>Value</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php foreach ($detailsRows as $row): ?>
-                                                    <tr>
-                                                        <td><?php echo htmlspecialchars($row[0]); ?></td>
-                                                        <td><?php echo htmlspecialchars($row[1]); ?></td>
-                                                    </tr>
-                                                <?php endforeach; ?>
-                                            </tbody>
-                                        </table>                                                    
-                                    <?php else: ?>
-                                        <p><em>No details available.</em></p>
+                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>                                  
+                                <div class="project-details__img-and-points">      
+                                    <?php if (!empty($features)): ?>
+                                        <p><strong>Features:</strong></p>
+                                        <ul class="project-details__points-list list-unstyled">
+                                            <?php foreach ($features as $feature): ?>
+                                                <li>
+                                                    <div class="icon">
+                                                        <span>&#10003;</span>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>
+                                                            <?php
+                                                                $input = htmlspecialchars($feature); // Assume it returns "Feature 1 Feature 2"
+                                                                $output = str_replace('Feature', '', $input); // Remove all occurrences of "Feature"
+                                                                echo trim($output); // Output: "1 2"                                                                                               
+                                                            ?>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            <?php endforeach; ?>
+                                        </ul>
                                     <?php endif; ?>
-                                </div>                                
+                                </div>                             
                             </div>
                         </div>
 <style>
@@ -235,6 +234,29 @@ if (!empty($detailsRaw)) {
                         <div class="col-xl-6 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
+                                <p class="project-details__text-1">
+                                    <?php if (!empty($detailsRows)): ?>
+                                        <p><strong>Details:</strong></p>
+                                        <table class="details_table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Property</th>
+                                                    <th>Value</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($detailsRows as $row): ?>
+                                                    <tr>
+                                                        <td><?php echo htmlspecialchars($row[0]); ?></td>
+                                                        <td><?php echo htmlspecialchars($row[1]); ?></td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </tbody>
+                                        </table>                                                    
+                                    <?php else: ?>
+                                        <p><em>No details available.</em></p>
+                                    <?php endif; ?>
+                                </p>
                                     <ul class="list-unstyled project-details__info-list">
                                         <li>
                                             <p>Date</p>
@@ -257,12 +279,12 @@ if (!empty($detailsRaw)) {
                                             <h4>$25,60000</h4>
                                         </li>
                                     </ul>
-                                    <div class="project-details__social">
+                                    <!-- <div class="project-details__social">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                         <a href="#"><i class="fab fa-facebook"></i></a>
                                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
                                         <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
