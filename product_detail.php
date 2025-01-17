@@ -179,10 +179,11 @@ if (!empty($detailsRaw)) {
                 <?php endif; ?>
                 <div class="project-details__content">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col-xl-6 col-lg-7">
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>
-                                <p class="project-details__text-1">
+                                <div class="div1">
+                                    <p class="project-details__text-1"></p>
                                     <?php if (!empty($detailsRows)): ?>
                                         <p><strong>Details:</strong></p>
                                         <table class="details_table">
@@ -204,31 +205,7 @@ if (!empty($detailsRaw)) {
                                     <?php else: ?>
                                         <p><em>No details available.</em></p>
                                     <?php endif; ?>
-                                </p>
-
-                                <div class="project-details__img-and-points">      
-                                    <?php if (!empty($features)): ?>
-                                        <p><strong>Features:</strong></p>
-                                        <ul class="project-details__points-list list-unstyled">
-                                            <?php foreach ($features as $feature): ?>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span>&#10003;</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>
-                                                            <?php
-                                                                $input = htmlspecialchars($feature); // Assume it returns "Feature 1 Feature 2"
-                                                                $output = str_replace('Feature', '', $input); // Remove all occurrences of "Feature"
-                                                                echo trim($output); // Output: "1 2"                                                                                               
-                                                            ?>
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                    <?php endif; ?>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
 <style>
@@ -255,7 +232,7 @@ if (!empty($detailsRaw)) {
         }
     }
 </style>
-                        <!-- <div class="col-xl-4 col-lg-5">
+                        <div class="col-xl-6 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
                                     <ul class="list-unstyled project-details__info-list">
@@ -288,7 +265,7 @@ if (!empty($detailsRaw)) {
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="project-details__pagination-box">
