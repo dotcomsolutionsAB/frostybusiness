@@ -179,10 +179,12 @@ if (!empty($detailsRaw)) {
                 <?php endif; ?>
                 <div class="project-details__content">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-7">
+                        <div class="col-xl-8 col-lg-7">
                             <div class="project-details__content-left">
                                 <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3> 
-                                <h4><?php echo htmlspecialchars($product['category_name']); ?>    <?php echo htmlspecialchars($product['model']); ?></h4>                                 
+                                <h4>
+                                    <span style="color:grey;">Category : </span><?php echo htmlspecialchars($product['category_name']); ?> <br>
+                                    <span style="color:grey;">Model : </span><?php echo htmlspecialchars($product['model']); ?></h4>                                 
                                 <div class="project-details__img-and-points">      
                                     <?php if (!empty($features)): ?>
                                         <p><strong>Features:</strong></p>
@@ -234,7 +236,7 @@ if (!empty($detailsRaw)) {
         }
     }
 </style>
-                        <div class="col-xl-6 col-lg-5">
+                        <div class="col-xl-4 col-lg-5">
                             <div class="project-details__content-right">
                                 <div class="project-details__info">
                                 <p class="project-details__text-1">
