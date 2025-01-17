@@ -1,7 +1,7 @@
 <div class="container">
     <div class="section-title text-center">
         <span class="section-title__tagline">Certificate</span>
-        <h2 class="section-title__title">Our IOC Certificate</h2>
+        <h2 class="section-title__title">Quality Guaranteed</h2>
     </div>
     <div class="row cir">
         <!--Team One Single Start-->
@@ -38,11 +38,11 @@
                     <div class="team-one__content">
                         <div class="team-one__info">
                             <p class="team-one__sub-title">Green Air</p>
-                            <h3 class="team-one__name"><a href="team.html">IOC Certificate</a></h3>
+                            <h3 class="team-one__name"><a href="team.html"></a></h3>
                         </div>
                     </div>
                     <div class="team-one__social">
-                        <a href="images/certificateIOC.pdf" target="_blank"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/certificateIOC.pdf" target="_blank">ISO Certificate<i class="fas fa-arrow-right"></i></a>
                         <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a> -->
@@ -77,3 +77,9 @@
         <!--Team One Single Start-->
     </div>
 </div>
+<style>
+    .cir{
+        display: flex;
+        justify-content: center;
+    }
+</style>
