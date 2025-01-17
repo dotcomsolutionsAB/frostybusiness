@@ -181,7 +181,8 @@ if (!empty($detailsRaw)) {
                     <div class="row">
                         <div class="col-xl-6 col-lg-7">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3>                                  
+                                <h3 class="project-details__title-1"><?php echo htmlspecialchars($product['product_name']); ?></h3> 
+                                <h4><?php echo htmlspecialchars($product['category_name']); ?>    <?php echo htmlspecialchars($product['model']); ?></h4>                                 
                                 <div class="project-details__img-and-points">      
                                     <?php if (!empty($features)): ?>
                                         <p><strong>Features:</strong></p>
@@ -209,7 +210,7 @@ if (!empty($detailsRaw)) {
                         </div>
 <style>
     .details_table{
-        width:400px !important;
+        /* width:400px !important; */
     }
     .details_table thead{
         background: #dcae53f7 !important;
@@ -223,11 +224,13 @@ if (!empty($detailsRaw)) {
     }
     .details_table th,td{
         border: 2px solid #f5f5f5 !important;
+        width: fit-content;
+        padding: 5px 10px 5px 10px
     }
 
     @media (min-width: 480px) {
         .details_table{
-            width: 350px !important;
+            /* width: 350px !important; */
         }
     }
 </style>
@@ -257,28 +260,12 @@ if (!empty($detailsRaw)) {
                                         <p><em>No details available.</em></p>
                                     <?php endif; ?>
                                 </p>
-                                    <ul class="list-unstyled project-details__info-list">
+                                    <!-- <ul class="list-unstyled project-details__info-list">
                                         <li>
-                                            <p>Date</p>
-                                            <h4>30 July, 2023</h4>
-                                        </li>
-                                        <li>
-                                            <p>Client</p>
-                                            <h4>Themeforest, Envato</h4>
-                                        </li>
-                                        <li>
-                                            <p>Website</p>
-                                            <h4><a href="#">austry.com</a></h4>
-                                        </li>
-                                        <li>
-                                            <p>Location</p>
-                                            <h4>New York, USA</h4>
-                                        </li>
-                                        <li>
-                                            <p>Value</p>
-                                            <h4>$25,60000</h4>
-                                        </li>
-                                    </ul>
+                                            <p>Category</p>
+                                            <h4>NAAA</h4>
+                                        </li>                                
+                                    </ul> -->
                                     <!-- <div class="project-details__social">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                         <a href="#"><i class="fab fa-facebook"></i></a>

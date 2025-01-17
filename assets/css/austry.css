@@ -16015,7 +16015,7 @@ ul {
   position: relative;
   display: block;
   background-color: var(--austry-black);
-  padding: 43px 50px 50px;
+  padding: 41px 20px 25px;
 }
 
 .project-details__info::before {
