@@ -4,7 +4,7 @@
 <div class="container">
     <div class="trusted-one__inner">
         <div class="trusted-one__video-link">
-            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+            <a href="https://youtu.be/k0-swCMkAwI?si=_KvIEH24przEOaIV" class="video-popup">
                 <div class="trusted-one__video-icon">
                     <span class="fa fa-play"></span>
                     <i class="ripple"></i>

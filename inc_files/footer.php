@@ -147,8 +147,8 @@
 <style>
     .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    left: 20px;
     z-index: 1000;
     background-color: #25d366;
     border-radius: 50%;
