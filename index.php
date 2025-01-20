@@ -50,7 +50,7 @@
 
 
 
-        <div class="preloader">
+        <div class="preloader_image">
           <img src="../frostybusiness/images/loader.png" alt="Logo">
         </div>
     <!-- /.preloader -->
