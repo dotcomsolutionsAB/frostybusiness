@@ -50,9 +50,9 @@
 
 
 
-        <div class="preloader_image">
-          <img src="../frostybusiness/images/loader.png" alt="Logo">
-        </div>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
     <!-- /.preloader -->
 
 
@@ -126,9 +126,9 @@
         <!--Testimonial One End-->
 
         <!--News One Start-->
-        <!-- <section class="news-one">
-                       
-        </section> -->
+        <section class="news-one">
+            <?php include("inc_files/news_one.php"); ?>            
+        </section>
         <!--News One End-->
 
         <!--Site Footer Start-->
