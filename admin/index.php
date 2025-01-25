@@ -96,6 +96,89 @@ if (empty($products)) {
 </head>
 <body>
     <h1>All Products</h1>
+
+    <!-- Add product Code -->
+    <a href="#" onclick="openAddProductModal()">Add Product</a>
+
+    <!-- Add Product Modal -->
+    <div id="addProductModal" style="display: none; position: fixed; top: 10%; left: 10%; width: 80%; height: 80%; background: #fff; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+        <form id="addProductForm" onsubmit="saveProduct(event)">
+            <h2>Add Product</h2>
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="category_id">Category:</label>
+            <select id="category_id" name="category_id">
+                <!-- Dynamically populated categories -->
+            </select>
+            <label>
+                <input type="checkbox" id="otherCategory"> Other
+            </label>
+            <input type="text" id="newCategoryName" name="new_category_name" placeholder="New Category Name" style="display: none;">
+
+            <label for="sheet_id">Sheet ID:</label>
+            <input type="number" id="sheet_id" name="sheet_id" value="0">
+
+            <label for="image_id">Image ID:</label>
+            <input type="number" id="image_id" name="image_id" value="0">
+
+            <label for="features">Features:</label>
+            <textarea id="features" name="features" placeholder="Enter features separated by line breaks"></textarea>
+
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" placeholder="Enter details"></textarea>
+
+            <button type="submit">Save</button>
+            <button type="button" onclick="closeAddProductModal()">Close</button>
+        </form>
+    </div>
+    <script>
+        function openAddProductModal() {
+            document.getElementById('addProductModal').style.display = 'block';
+        }
+
+        function closeAddProductModal() {
+            document.getElementById('addProductModal').style.display = 'none';
+        }
+
+        document.getElementById('otherCategory').addEventListener('change', function () {
+            const newCategoryField = document.getElementById('newCategoryName');
+            newCategoryField.style.display = this.checked ? 'block' : 'none';
+        });
+
+        async function saveProduct(event) {
+            event.preventDefault();
+            const formData = new FormData(document.getElementById('addProductForm'));
+
+            // Convert features into `<li>` tags
+            const features = formData.get('features').split('\n').map(f => `<li>${f.trim()}</li>`).join('');
+            formData.set('features', features);
+
+            try {
+                const response = await fetch('save_product.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Product saved successfully!');
+                    closeAddProductModal();
+                    location.reload(); // Refresh the product list
+                } else {
+                    alert('Error: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error saving product:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+    </script>
+    <!-- End Add product Code -->
+     
     <table>
         <thead>
             <tr>
