@@ -25,6 +25,11 @@ if (empty($products)) {
     die("No products found.");
 }
 
+$sql2 = "SELECT id, name FROM categories";
+$stmt2 = $pdo->prepare($sql2);
+$stmt2->execute();
+$categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -168,7 +173,7 @@ if (empty($products)) {
             <label for="category_id">Category:</label>
             <select id="category_id" name="category_id">
                 <option value="">Select Category</option>
-                <?php foreach ($categories as $category): ?>
+                <?php foreach ($categoriess as $category): ?>
                     <option value="<?php echo htmlspecialchars($category['id']); ?>">
                         <?php echo htmlspecialchars($category['name']); ?>
                     </option>
