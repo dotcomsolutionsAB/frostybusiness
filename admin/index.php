@@ -93,6 +93,112 @@ if (empty($products)) {
             popup.style.display = 'none';
         }
     </script>
+    <!-- Add product -->
+     <style>
+        /* Modal styles */
+    #addProductModal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        padding: 20px;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #addProductModal h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    #addProductForm label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    #addProductForm input,
+    #addProductForm select,
+    #addProductForm textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s;
+    }
+
+    #addProductForm input:focus,
+    #addProductForm select:focus,
+    #addProductForm textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        background-color: #fff;
+    }
+
+    #addProductForm button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    #addProductForm button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+    }
+
+    #addProductForm button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    #addProductForm button[type="button"] {
+        background-color: #f44336;
+        color: white;
+    }
+
+    #addProductForm button[type="button"]:hover {
+        background-color: #d32f2f;
+    }
+
+    /* Checkbox and additional category field */
+    #newCategoryName {
+        display: none;
+    }
+
+    /* Overlay for modal background */
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+     </style>
 </head>
 <body>
     <h1>All Products</h1>
@@ -178,7 +284,7 @@ if (empty($products)) {
         }
     </script>
     <!-- End Add product Code -->
-     
+
     <table>
         <thead>
             <tr>
