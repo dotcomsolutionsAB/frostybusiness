@@ -95,19 +95,70 @@ if (empty($products)) {
     </script>
     <!-- Add product -->
      <style>
-        
-     </style>
+       #addProductModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        #addProductForm label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        #addProductForm input, #addProductForm select, #addProductForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s;
+        }
+        #addProductForm button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: white;
+        }
+        #addProductForm button[type="button"] {
+            background-color: #f44336;
+        }
+    </style>
 </head>
 <body>
     <h1>All Products</h1>
 
     <!-- Add product Code -->
-    <a href="#" onclick="openAddProductModal()">Add Product</a>
+    <button onclick="openAddProductModal()">Add Product</button>
 
     <!-- Add Product Modal -->
-    <div id="addProductModal" style="display: none; position: fixed; top: 10%; left: 10%; width: 80%; height: 80%; background: #fff; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+    <div id="addProductModal">
         <form id="addProductForm" onsubmit="saveProduct(event)">
             <h2>Add Product</h2>
+
             <label for="name">Product Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -116,7 +167,12 @@ if (empty($products)) {
 
             <label for="category_id">Category:</label>
             <select id="category_id" name="category_id">
-                <!-- Dynamically populated categories -->
+                <option value="">Select Category</option>
+                <?php foreach ($categories as $category): ?>
+                    <option value="<?php echo htmlspecialchars($category['id']); ?>">
+                        <?php echo htmlspecialchars($category['name']); ?>
+                    </option>
+                <?php endforeach; ?>
             </select>
             <label>
                 <input type="checkbox" id="otherCategory"> Other
@@ -139,6 +195,7 @@ if (empty($products)) {
             <button type="button" onclick="closeAddProductModal()">Close</button>
         </form>
     </div>
+
     <script>
         function openAddProductModal() {
             document.getElementById('addProductModal').style.display = 'block';
@@ -171,7 +228,7 @@ if (empty($products)) {
                 if (result.success) {
                     alert('Product saved successfully!');
                     closeAddProductModal();
-                    location.reload(); // Refresh the product list
+                    location.reload();
                 } else {
                     alert('Error: ' + result.message);
                 }
