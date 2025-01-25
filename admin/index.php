@@ -152,7 +152,7 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
         #addProductForm button[type="button"] {
             background-color: #f44336;
         }
-        .button{
+        .buttons{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -204,7 +204,7 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
             <label for="details">Details:</label>
             <textarea id="details" name="details" placeholder="Enter details"></textarea>
 
-            <div class="button">
+            <div class="buttons">
                 <button type="submit">Save</button>
                 <button type="button" onclick="closeAddProductModal()">Close</button>
             </div>
