@@ -153,8 +153,10 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
             background-color: #f44336;
         }
         .button{
-            display:flex;
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 20px;
         }
     </style>
 </head>
