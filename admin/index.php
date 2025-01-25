@@ -123,15 +123,16 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
             }
         }
         #addProductForm label {
-            display: block;
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 5px;
             font-weight: bold;
             color: #555;
         }
         #addProductForm input, #addProductForm select, #addProductForm textarea {
-            width: 100%;
+            width: 95%;
             padding: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 14px;
@@ -150,6 +151,10 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
         }
         #addProductForm button[type="button"] {
             background-color: #f44336;
+        }
+        .button{
+            display:flex;
+            
         }
     </style>
 </head>
@@ -180,7 +185,8 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
                 <?php endforeach; ?>
             </select>
             <label>
-                <input type="checkbox" id="otherCategory"> Other
+                Other
+                <input type="checkbox" id="otherCategory">
             </label>
             <input type="text" id="newCategoryName" name="new_category_name" placeholder="New Category Name" style="display: none;">
 
@@ -196,8 +202,10 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
             <label for="details">Details:</label>
             <textarea id="details" name="details" placeholder="Enter details"></textarea>
 
-            <button type="submit">Save</button>
-            <button type="button" onclick="closeAddProductModal()">Close</button>
+            <div class="button">
+                <button type="submit">Save</button>
+                <button type="button" onclick="closeAddProductModal()">Close</button>
+            </div>
         </form>
     </div>
 
