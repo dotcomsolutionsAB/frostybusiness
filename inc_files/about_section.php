@@ -61,7 +61,7 @@
                     </li>
                 </ul>
                 <div class="about-one__btn-box">
-                    <a href="about.html" class="about-one__btn thm-btn">Discover more</a>
+                    <a href="about.php" class="about-one__btn thm-btn">Discover more</a>
                 </div>
             </div>
         </div>

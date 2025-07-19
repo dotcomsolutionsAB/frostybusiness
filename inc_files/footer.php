@@ -133,8 +133,8 @@
     <div class="site-footer__bottom">
         <p class="site-footer__bottom-text">© Copyright 2025 by <a href="#">Dot Com Solutions</a></p>
         <!-- <ul class="list-unstyled site-footer__bottom-menu">
-            <li><a href="about.html">Help</a></li>
-            <li><a href="about.html">Privacy Policy</a></li>
+            <li><a href="about.php">Help</a></li>
+            <li><a href="about.php">Privacy Policy</a></li>
         </ul> -->
     </div>
 </div>

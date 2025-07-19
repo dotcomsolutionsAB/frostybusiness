@@ -14,7 +14,7 @@
                     <div class="team-one__content">
                         <div class="team-one__info">
                             <p class="team-one__sub-title">Co Founder</p>
-                            <h3 class="team-one__name"><a href="team.html">Kevin Martin</a></h3>
+                            <h3 class="team-one__name"><a href="team.php">Kevin Martin</a></h3>
                         </div>
                     </div>
                     <div class="team-one__social">
@@ -38,7 +38,7 @@
                     <div class="team-one__content">
                         <div class="team-one__info">
                             <p class="team-one__sub-title">Green Air</p>
-                            <h3 class="team-one__name"><a href="team.html"></a></h3>
+                            <h3 class="team-one__name"><a href="team.php"></a></h3>
                         </div>
                     </div>
                     <div class="team-one__social">
@@ -63,7 +63,7 @@
                     <div class="team-one__content">
                         <div class="team-one__info">
                             <p class="team-one__sub-title">Contractor</p>
-                            <h3 class="team-one__name"><a href="team.html">Mike Hardson</a></h3>
+                            <h3 class="team-one__name"><a href="team.php">Mike Hardson</a></h3>
                         </div>
                     </div>
                     <div class="team-one__social">

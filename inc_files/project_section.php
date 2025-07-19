@@ -73,11 +73,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -95,11 +95,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -117,11 +117,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -139,11 +139,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -161,11 +161,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -183,11 +183,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -237,11 +237,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -259,11 +259,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -281,11 +281,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -303,11 +303,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -325,11 +325,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -347,11 +347,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -401,11 +401,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -423,11 +423,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -445,11 +445,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -467,11 +467,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -489,11 +489,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -511,11 +511,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -564,11 +564,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -586,11 +586,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -608,11 +608,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -630,11 +630,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -652,11 +652,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -674,11 +674,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -728,11 +728,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -750,11 +750,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -772,11 +772,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -794,11 +794,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -816,11 +816,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
@@ -838,11 +838,11 @@
                                                 <div class="project-one__content-box">
                                                     <p class="project-one__sub-title">interiors</p>
                                                     <h4 class="project-one__title"><a
-                                                            href="project-details.html">Jelewrs
+                                                            href="project-details.php">Jelewrs
                                                             Mutual <br>
                                                             Mantinance</a></h4>
                                                     <div class="project-one__arrow">
-                                                        <a href="project-details.html"><span
+                                                        <a href="project-details.php"><span
                                                                 class="icon-right-arrow"></span></a>
                                                     </div>
                                                 </div>
