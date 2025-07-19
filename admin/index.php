@@ -17,7 +17,7 @@ try {
 }
 
 // Fetch products and their categories
-$sql = "SELECT p.id, p.name AS product_name, p.model, c.name AS category_name, u.file_original_name, u.path 
+$sql = "SELECT p.id, p.name AS product_name, p.model,p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
         FROM products p
         LEFT JOIN categories c ON p.category_id = c.id
         LEFT JOIN uploads u ON p.image_id = u.id";
