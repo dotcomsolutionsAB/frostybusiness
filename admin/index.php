@@ -279,8 +279,8 @@ $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo htmlspecialchars($product['product_name']); ?></td>
                     <td><?php echo htmlspecialchars($product['model']); ?></td>
                     <td><?php echo htmlspecialchars($product['category_name']); ?></td>
-                    <td><?php echo htmlspecialchars($product['features']); ?></td>
-                    <td><?php echo htmlspecialchars($product['details']); ?></td>
+                    <td><?php echo htmlspecialchars($product['features'] ?? ''); ?></td>
+                    <td><?php echo htmlspecialchars($product['details'] ?? ''); ?></td>
                     <td>
                         <?php if (!empty($product['file_original_name'])): ?>
                             <img src="<?php echo htmlspecialchars($product['path']); ?>" alt="<?php echo htmlspecialchars($product['file_original_name']); ?>" width="100">
