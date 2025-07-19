@@ -1,38 +1,38 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('log_errors', 1);
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    ini_set('log_errors', 1);
 
-// Database configuration
-$host = '127.0.0.1';
-$dbname = 'frostybusiness';
-$username = 'frostybusiness';
-$password = '1y5D^dn09';
+    // Database configuration
+    $host = '127.0.0.1';
+    $dbname = 'frostybusiness';
+    $username = 'frostybusiness';
+    $password = '1y5D^dn09';
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
-}
+    try {
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die("Connection failed: " . $e->getMessage());
+    }
 
-// Fetch products and their categories
-$sql = "SELECT p.id, p.name AS product_name, p.model,p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
-        FROM products p
-        LEFT JOIN categories c ON p.category_id = c.id
-        LEFT JOIN uploads u ON p.image_id = u.id";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // Fetch products and their categories
+    $sql = "SELECT p.id, p.name AS product_name, p.model,p.features, p.details, c.name AS category_name, u.file_original_name, u.path 
+            FROM products p
+            LEFT JOIN categories c ON p.category_id = c.id
+            LEFT JOIN uploads u ON p.image_id = u.id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-if (empty($products)) {
-    die("No products found.");
-}
+    if (empty($products)) {
+        die("No products found.");
+    }
 
-$sql2 = "SELECT id, name FROM categories";
-$stmt2 = $pdo->prepare($sql2);
-$stmt2->execute();
-$categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+    $sql2 = "SELECT id, name FROM categories";
+    $stmt2 = $pdo->prepare($sql2);
+    $stmt2->execute();
+    $categoriess = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html>

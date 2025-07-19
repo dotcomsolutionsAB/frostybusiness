@@ -26,7 +26,7 @@
                             <h2 class="main-slider__title">Innovative Cooling Solutions<br> for a Changing World</h2>
                             <p class="main-slider__text">Harnessing the latest technology to deliver cutting-edge <br>  refrigeration systems</p>
                             <div class="main-slider__btn-box">
-                                <a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+                                <a href="about.php" class="thm-btn main-slider__btn">Discover more</a>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                             <h2 class="main-slider__title">Purity and Safety, <br> Perfected</h2>
                             <p class="main-slider__text">Sub text Delivering the best systems to  ensure safety <br> and taste which are never compromised.</p>
                             <div class="main-slider__btn-box">
-                                <a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+                                <a href="about.php" class="thm-btn main-slider__btn">Discover more</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             <h2 class="main-slider__title">Your Success, <br> Our Commitment</h2>
                             <p class="main-slider__text">Partner with us for unmatched service and expertise.</p>
                             <div class="main-slider__btn-box">
-                                <a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+                                <a href="about.php" class="thm-btn main-slider__btn">Discover more</a>
                             </div>
                         </div>
                     </div>
