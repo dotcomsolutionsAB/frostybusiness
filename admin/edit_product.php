@@ -13,7 +13,7 @@
             <?php
             // Fetch products from the database
             try {
-                $pdo = new PDO("mysql:host=localhost;dbname=frostybusiness", "frostybusiness", "1y5D^dn09");
+                $pdo = new PDO("mysql:host=127.0.0.1;dbname=frostybusiness", "frostybusiness", "1y5D^dn09");
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
                 $stmt = $pdo->query("SELECT id, name FROM products");

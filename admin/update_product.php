@@ -1,6 +1,6 @@
 <?php
 // Database configuration
-$host = 'localhost';
+$host = '127.0.0.1';
 $dbname = 'frostybusiness';
 $username = 'frostybusiness';
 $password = '1y5D^dn09';
